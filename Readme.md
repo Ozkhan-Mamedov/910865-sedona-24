@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Озхан Мамедов](https://up.htmlacademy.ru/htmlcss/24/user/910865).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Юдин](https://htmlacademy.ru/profile/a-yudin).
 
 ---
 
