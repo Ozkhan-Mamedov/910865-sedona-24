@@ -26,8 +26,29 @@
       <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
-      <!-- Потом исправим -->
-      <span class="button">Поиск гостиницы в&nbsp;Седоне</span>
+      <section class="modal modal-search">
+        <button>Поиск гостиницы в&nbsp;Седоне</button>
+        <h3 class="visually-hidden">Форма поиска гостиницы</h3>
+        <form class="book-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="book-date">
+            <label for="book-arrival">Дата заезда:<img src="img/calendar.svg"></label>
+            <input id="book-arrival" type="date" name="arrival-date" placeholder="24 апреля 2017">
+          </p>
+          <p class="book-date">
+            <label for="book-departure">Дата выезда:<img src="img/calendar.svg"></label>
+            <input id="book-departure" type="date" name="departure-date" placeholder="4 июля 2017">
+          </p>
+          <p class="book-count">
+            <label for="book-adults-num">Взрослые:</label>
+            <input id="book-adults-num" type="number" name="adults-num" placeholder="2">
+          </p>
+          <p class="book-count">
+            <label for="book-children-num">Дети:</label>
+            <input id="book-children-num" type="number" name="children-num" placeholder="0">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <a class="social-hashtag" href="#">#visitSEDONA</a>
@@ -41,8 +62,5 @@
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
-    <section class="modal modal-search">
-      <!-- Здесь будет форма -->
-    </section>
   </body>
 </html>
