@@ -20,10 +20,69 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Выбор типа жилья</h1>
-      <!-- фильтр -->
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <section class="catalog">
+      <form class="content-filter" action="https://echo.htmlacademy.ru" method="get">
+        <!-- infrastructure -->
+        <p class="filter-options">
+          <h3>Инфраструктура:</h3>
+          <ul class="options-list">
+            <li>
+              <label for="filter-pool">Бассейн</label>
+              <input id="filter-pool" type="checkbox" name="pool" checked>
+            </li>
+            <li>
+              <label for="filter-parking">Парковка</label>
+              <input id="filter-parking" type="checkbox" name="parking">
+            </li>
+            <li>
+              <label for="filter-wi-fi">Wi-Fi</label>
+              <input id="filter-wi-fi" type="checkbox" name="wi-fi">
+            </li>
+          </ul>
+        </p>
+        <!-- type of housing -->
+        <p class="filter-options">
+          <h3>Тип жилья:</h3>
+          <ul class="options-list">
+            <li>
+              <label for="filter-hotel">Гостиница</label>
+              <input id="filter-hotel" type="checkbox" name="hotel" checked>
+            </li>
+            <li>
+              <label for="filter-motel">Мотель</label>
+              <input id="filter-motel" type="checkbox" name="motel" checked>
+            </li>
+            <li>
+              <label for="filter-apartments">Апартаменты</label>
+              <input id="filter-apartments" type="checkbox" name="apartments" checked>
+            </li>
+          </ul>
+        </p>
+        <p class="filter-options">
+        <!-- cost per day  -->
+          <h3>Стоимость в&nbsp;сутки (Р):</h3>
+          <label for="filter-slider-min">От</label>
+          <input id="filter-slider-min" type="text" name="slider-min" placeholder="0">
+          <label for="filter-slider-max">До</label>
+          <input id="filter-slider-max" type="text" name="slider-max" placeholder="3000">
+        </p>
+        <button class="button" type="submit">Показать</button>
+      </form>
+      <section class="search-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="search-found">Найдено: 3</p>
+        <p class="search-sort">Сортировка:</p>
+        <ul>
+          <li class="sort-selected"><a href="#">По&nbsp;цене</a></li>
+          <li><a href="#">По&nbsp;типу</a></li>
+          <li><a href="#">По&nbsp;рейтингу</a></li>
+        </ul>
+        <p class="sort-order">
+          <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>
+          <a class="sort-order-selected" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>
+        </p>
+      </section>
+      <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
             <article class="catalog-item-info">
