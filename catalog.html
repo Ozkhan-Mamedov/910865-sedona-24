@@ -11,10 +11,18 @@
           <img src="img/logo.svg" width="100" height="50" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и&nbsp;видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a>Гостиницы</a></li>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и&nbsp;видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li class="site-navigation-current">
+            <a>Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -22,9 +30,8 @@
       <h1 class="visually-hidden">Выбор типа жилья</h1>
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="content-filter" action="https://echo.htmlacademy.ru" method="get">
-        <!-- infrastructure -->
-        <p class="filter-options">
-          <h3>Инфраструктура:</h3>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
           <ul class="options-list">
             <li>
               <label for="filter-pool">Бассейн</label>
@@ -39,10 +46,9 @@
               <input id="filter-wi-fi" type="checkbox" name="wi-fi">
             </li>
           </ul>
-        </p>
-        <!-- type of housing -->
-        <p class="filter-options">
-          <h3>Тип жилья:</h3>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
           <ul class="options-list">
             <li>
               <label for="filter-hotel">Гостиница</label>
@@ -57,32 +63,44 @@
               <input id="filter-apartments" type="checkbox" name="apartments" checked>
             </li>
           </ul>
-        </p>
-        <p class="filter-options">
-        <!-- cost per day  -->
-          <h3>Стоимость в&nbsp;сутки (Р):</h3>
+        </fieldset>
+        <!-- Фильтр по стоимости в сутки
+        <fieldset>
+          <legend>Стоимость в&nbsp;сутки (Р):</legend>
           <label for="filter-slider-min">От</label>
           <input id="filter-slider-min" type="text" name="slider-min" placeholder="0">
           <label for="filter-slider-max">До</label>
           <input id="filter-slider-max" type="text" name="slider-max" placeholder="3000">
-        </p>
+        </fieldset>
+        -->
         <button class="button" type="submit">Показать</button>
       </form>
       <section class="search-result">
-        <h2 class="visually-hidden">Результаты поиска</h2>
+        <h2 class="visually-hidden">Сортировка результатов поиска</h2>
         <p class="search-found">Найдено: 3</p>
         <p class="search-sort">Сортировка:</p>
         <ul>
-          <li class="sort-selected"><a href="#">По&nbsp;цене</a></li>
-          <li><a href="#">По&nbsp;типу</a></li>
-          <li><a href="#">По&nbsp;рейтингу</a></li>
+          <li class="sort-selected">
+            <a href="#">По&nbsp;цене</a>
+          </li>
+          <li>
+            <a href="#">По&nbsp;типу</a>
+          </li>
+          <li>
+            <a href="#">По&nbsp;рейтингу</a>
+          </li>
         </ul>
-        <p class="sort-order">
-          <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>
-          <a class="sort-order-selected" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>
-        </p>
+        <ul class="sort-order">
+          <li>
+            <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>
+          </li>
+          <li>
+            <a class="sort-order-selected" href="#"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>
+          </li>
+        </ul>
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <article class="catalog-item-info">
@@ -156,9 +174,15 @@
     <footer class="main-footer">
       <a class="social-hashtag" href="#">#visitSEDONA</a>
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
+        <li>
+          <a class="social-button" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Youtube</a>
+        </li>
       </ul>
       <p class="footer-copyright">
         Website&nbsp;by
