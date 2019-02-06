@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-size: contain;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+}
+
+
+/* убраны подчеркивания ссылок */
+a {
+  text-decoration: none;
+}
+
+/* у элементов списка убраны маркеры */
+.site-navigation,
+.advantages,
+.footer-social,
+.advantages-1,
+.catalog-list {
+  list-style: none;
+}
+
+/* поведение элементов навигации при нажатии и наведении */
+ul.site-navigation a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+ul.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+ul.site-navigation a:active {
+  color: #b2b2b2;
+}
+
+/* активная вкладка навигации */
+li.site-navigation-current a {
+  color: #766357;
+}
+
+/* заголовки товаров */
+article h3{
+  font-size: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+h3 a:hover {
+  color: #81b3d2;
+
+  background-color: #ffffff;
+}
+
+h3 a:active {
+  color: #cacaca;
+
+  background-color: #ffffff;
+}
+
+/* тип жилья и цена */
+
+.catalog-item-type {
+  color: #333333;
+  line-height: 21px;
+  font-weight: normal;
+
+  background-color: #ffffff;
+}
+
+/* кнопка подробнее */
+
+article a.button:nth-of-type(1) {
+  color: #ffffff;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+}
+
+article a.button:nth-of-type(1):hover {
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #669ec0;
+}
+
+article a.button:nth-of-type(1):active {
+  color: #88b6d1;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #5496bd;
+}
+
+/* кнопка забронировать */
+
+article a.button:nth-of-type(2) {
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #766357;
+}
+
+article a.button:nth-of-type(2):hover {
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #604e43;
+}
+
+article a.button:nth-of-type(2):active {
+  color: #857871;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #503e33;
+}
+
+/* шрифты навигации не нужно переопределять */
+
+/* задание сложного фона в контейнере и его центрирование */
+.complex-image {
+  background: url("../img/welcome.svg") no-repeat,
+              url("../img/polygon.svg") no-repeat;
+  padding-bottom: 20%;
+}
+
+/* седона - небольшой ... шрифты и центрирование */
+.container-lead {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+/* рассмотрим 5 причин шрифты и центрирование */
+.container-advantages {
+  font-weight: normal;
+  color: #333333;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+/* заинтересовались шрифты и центрирование */
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+/* укажите предполагаемые даты... шрифты и центрирование */
+h2 + p {
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  font-weight: normal;
+
+  background-color: #ffffff;
+}
+
+/* кнопка поиска гостиницы шрифты и поведение при нажатии и наведении, задний фон */
+.modal-search {
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #766357;
+
+  border: none;
+}
+
+.modal-search:hover {
+  color: #ffffff;
+
+  background-color: #604e43;
+}
+
+.modal-search:active {
+  color: #857871;
+
+  background-color: #503e33;
+}
+
+/* форма шрифты лейблов не нужно переопределять */
+
+
+/* изменение цвета иконки календаря */
+
+
+/* форма шрифты инпутов и поведение при нажатии и наведении */
+.book-form input {
+  vertical-align: middle;
+  font-weight: bold;
+  color: #000000;
+
+  background-color: #f2f2f2;
+
+  border: none;
+}
+
+.book-form input:hover {
+  color: #000000;
+
+  background-color: #ebebeb;
+}
+
+.book-form input:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+
+  border: 2px #e5e5e5 solid;
+}
+
+.book-count input {
+  text-align: center;
+}
+
+/* кнопка найти шрифты и поведение при нажатии и наведении, задний фон */
+.modal .button {
+  color: #ffffff;
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+
+  border: none;
+}
+
+.modal .button:hover {
+  color: #ffffff;
+
+  background-color: #669ec0;
+}
+
+.modal .button:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
+/* задний фон футера */
+.main-footer {
+  background-color: #fefefe;
+}
+
+/* #visitsedona шрифты */
+a.social-hashtag {
+  font-size: 21px;
+}
+
+/* список социальных сетей поведение при нажатии и наведении и задний фон */
+.footer-social li {
+  background-color: #81b3d2;
+}
+
+.footer-social li:hover {
+  background-color: #669ec0;
+}
+
+.footer-social li:active {
+  background-color: #5496bd;
+}
+
+/* website by шрифты */
+p.footer-copyright {
+  font-weight: normal;
+  color: #000000;
+}
+
+/* лого академии поведение при нажатии и наведении */
+
+/*
+
+.complex-image {
+  background: url("../img/welcome.svg") no-repeat,
+              url("../img/polygon.svg") no-repeat,
+              url("../img/background.jpg") no-repeat;
+  padding-bottom: 75%;
+}
+*/
