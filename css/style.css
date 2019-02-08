@@ -4,16 +4,10 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-
-  background-color: #ffffff;
-  background-size: contain;
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
 }
-
 
 /* убраны подчеркивания ссылок */
 a {
@@ -21,51 +15,44 @@ a {
 }
 
 /* у элементов списка убраны маркеры */
-.site-navigation,
-.advantages,
-.footer-social,
-.advantages-1,
-.catalog-list {
+.list-style {
   list-style: none;
 }
 
 /* поведение элементов навигации при нажатии и наведении */
-ul.site-navigation a {
+.site-navigation a {
+  font-weight: bold;
   color: #000000;
   background-color: #ffffff;
 }
 
-ul.site-navigation a:hover {
+.site-navigation a:hover {
   color: #81b3d2;
 }
 
-ul.site-navigation a:active {
+.site-navigation a:active {
   color: #b2b2b2;
 }
 
+/* кнопка показать в каталоге */
+
 /* активная вкладка навигации */
-li.site-navigation-current a {
+.site-navigation-current a {
   color: #766357;
 }
 
 /* заголовки товаров */
-article h3{
+.item-header {
   font-size: 21px;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
-h3 a:hover {
+.item-header:hover {
   color: #81b3d2;
-
-  background-color: #ffffff;
 }
 
-h3 a:active {
+.item-header:active {
   color: #cacaca;
-
-  background-color: #ffffff;
 }
 
 /* тип жилья и цена */
@@ -73,87 +60,46 @@ h3 a:active {
 .catalog-item-type {
   color: #333333;
   line-height: 21px;
-  font-weight: normal;
-
-  background-color: #ffffff;
 }
 
-/* кнопка подробнее */
-
-article a.button:nth-of-type(1) {
-  color: #ffffff;
+.catalog-item-price {
+  color: #333333;
   line-height: 21px;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #81b3d2;
 }
 
-article a.button:nth-of-type(1):hover {
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #669ec0;
-}
-
-article a.button:nth-of-type(1):active {
-  color: #88b6d1;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #5496bd;
-}
-
-/* кнопка забронировать */
-
-article a.button:nth-of-type(2) {
+.catalog-item-rating {
+  color: #666666;
   line-height: 21px;
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
 
-  background-color: #766357;
-}
-
-article a.button:nth-of-type(2):hover {
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #604e43;
-}
-
-article a.button:nth-of-type(2):active {
-  color: #857871;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #503e33;
+  background-color: #f2f2f2;
 }
 
 /* шрифты навигации не нужно переопределять */
 
 /* задание сложного фона в контейнере и его центрирование */
+
 .complex-image {
   background: url("../img/welcome.svg") no-repeat,
-              url("../img/polygon.svg") no-repeat;
-  padding-bottom: 20%;
+              url("../img/polygon.svg") no-repeat,
+              url("../img/background.jpg") no-repeat;
+  height: 508px;
 }
 
 /* седона - небольшой ... шрифты и центрирование */
+
 .container-lead {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-align: center;
+  font-weight: bold;
 
   background-color: #ffffff;
 }
 
 /* рассмотрим 5 причин шрифты и центрирование */
+
 .container-advantages {
-  font-weight: normal;
   color: #333333;
   text-align: center;
 
@@ -161,7 +107,8 @@ article a.button:nth-of-type(2):active {
 }
 
 /* заинтересовались шрифты и центрирование */
-h2 {
+
+.interest {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -171,49 +118,26 @@ h2 {
 }
 
 /* укажите предполагаемые даты... шрифты и центрирование */
-h2 + p {
+
+.interest-info {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  font-weight: normal;
 
   background-color: #ffffff;
 }
 
-/* кнопка поиска гостиницы шрифты и поведение при нажатии и наведении, задний фон */
-.modal-search {
-  font-size: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: #ffffff;
-
-  background-color: #766357;
-
-  border: none;
-}
-
-.modal-search:hover {
-  color: #ffffff;
-
-  background-color: #604e43;
-}
-
-.modal-search:active {
-  color: #857871;
-
-  background-color: #503e33;
-}
-
 /* форма шрифты лейблов не нужно переопределять */
-
 
 /* изменение цвета иконки календаря */
 
-
 /* форма шрифты инпутов и поведение при нажатии и наведении */
+
+.book-form {
+  font-weight: bold;
+}
+
 .book-form input {
-  vertical-align: middle;
   font-weight: bold;
   color: #000000;
 
@@ -240,41 +164,23 @@ h2 + p {
   text-align: center;
 }
 
-/* кнопка найти шрифты и поведение при нажатии и наведении, задний фон */
-.modal .button {
-  color: #ffffff;
-  font-size: 21px;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #81b3d2;
-
-  border: none;
-}
-
-.modal .button:hover {
-  color: #ffffff;
-
-  background-color: #669ec0;
-}
-
-.modal .button:active {
-  color: #88b6d1;
-
-  background-color: #5496bd;
-}
-
 /* задний фон футера */
 .main-footer {
   background-color: #fefefe;
 }
 
 /* #visitsedona шрифты */
-a.social-hashtag {
+
+.social-hashtag {
   font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color: #fefefe;
 }
 
 /* список социальных сетей поведение при нажатии и наведении и задний фон */
+
 .footer-social li {
   background-color: #81b3d2;
 }
@@ -288,19 +194,101 @@ a.social-hashtag {
 }
 
 /* website by шрифты */
-p.footer-copyright {
-  font-weight: normal;
+
+.footer-copyright {
   color: #000000;
 }
 
 /* лого академии поведение при нажатии и наведении */
 
-/*
+.button-common {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
 
-.complex-image {
-  background: url("../img/welcome.svg") no-repeat,
-              url("../img/polygon.svg") no-repeat,
-              url("../img/background.jpg") no-repeat;
-  padding-bottom: 75%;
+  border: none;
 }
-*/
+
+.button-modal:hover {
+  background-color: #604e43;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.button-modal:active {
+  background-color: #503e33;
+
+  color: #928a85;
+}
+
+.book:active {
+  background-color: #503e33;
+
+  color: #928a85;
+}
+
+.button-find:hover {
+  background-color: #669ec0;
+}
+
+.detail:hover {
+  background-color: #669ec0;
+}
+
+.detail:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.button-find:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-modal {
+  width: 568px;
+  height: 86px;
+}
+
+.button-find {
+  width: 458px;
+  height: 58px;
+}
+
+.button-find {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.button-modal {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.detail {
+  display: block;
+  width: 110px;
+  height: 27px;
+}
+.book {
+  display: block;
+  width: 142px;
+  height: 27px;
+}
+
+.detail.book {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 21px;
+}
