@@ -34,11 +34,40 @@ a {
   color: #b2b2b2;
 }
 
-/* кнопка показать в каталоге */
-
 /* активная вкладка навигации */
 .site-navigation-current a {
   color: #766357;
+}
+
+.site-navigation-current a:hover {
+  color: #766357;
+}
+
+.site-navigation-current a:active {
+  color: #766357;
+}
+
+/* */
+.advantages-1-2 {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+/* */
+.container-advantages, .advantages-3-4-5, .interest-info {
+  color: #333333;
+}
+
+/* */
+.advantages-3-4-5 {
+
+  background-color: #eeeeee;
+}
+
+/* */
+.advantages-3-4-5 h3 {
+  color: #000000;
 }
 
 /* заголовки товаров */
@@ -55,18 +84,22 @@ a {
   color: #cacaca;
 }
 
+/* */
+.catalog-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 /* тип жилья и цена */
-
-.catalog-item-type {
+.catalog-item-type, .catalog-item-price {
   color: #333333;
   line-height: 21px;
 }
 
-.catalog-item-price {
-  color: #333333;
-  line-height: 21px;
-}
-
+/* */
 .catalog-item-rating {
   color: #666666;
   line-height: 21px;
@@ -74,10 +107,7 @@ a {
   background-color: #f2f2f2;
 }
 
-/* шрифты навигации не нужно переопределять */
-
 /* задание сложного фона в контейнере и его центрирование */
-
 .complex-image {
   background: url("../img/welcome.svg") no-repeat,
               url("../img/polygon.svg") no-repeat,
@@ -85,8 +115,7 @@ a {
   height: 508px;
 }
 
-/* седона - небольшой ... шрифты и центрирование */
-
+/* седона - небольшой ... шрифт*/
 .container-lead {
   font-size: 21px;
   line-height: 26px;
@@ -97,17 +126,14 @@ a {
   background-color: #ffffff;
 }
 
-/* рассмотрим 5 причин шрифты и центрирование */
-
+/* рассмотрим 5 причин шрифт*/
 .container-advantages {
-  color: #333333;
   text-align: center;
 
   background-color: #ffffff;
 }
 
-/* заинтересовались шрифты и центрирование */
-
+/* заинтересовались шрифт*/
 .interest {
   font-size: 30px;
   line-height: 36px;
@@ -117,26 +143,20 @@ a {
   background-color: #ffffff;
 }
 
-/* укажите предполагаемые даты... шрифты и центрирование */
-
+/* укажите предполагаемые... шрифт*/
 .interest-info {
   line-height: 26px;
   text-align: center;
-  color: #333333;
 
   background-color: #ffffff;
 }
 
-/* форма шрифты лейблов не нужно переопределять */
-
-/* изменение цвета иконки календаря */
-
-/* форма шрифты инпутов и поведение при нажатии и наведении */
-
+/* */
 .book-form {
   font-weight: bold;
 }
 
+/* */
 .book-form input {
   font-weight: bold;
   color: #000000;
@@ -160,6 +180,7 @@ a {
   border: 2px #e5e5e5 solid;
 }
 
+/* */
 .book-count input {
   text-align: center;
 }
@@ -170,7 +191,6 @@ a {
 }
 
 /* #visitsedona шрифты */
-
 .social-hashtag {
   font-size: 21px;
   font-weight: bold;
@@ -179,9 +199,9 @@ a {
   background-color: #fefefe;
 }
 
-/* список социальных сетей поведение при нажатии и наведении и задний фон */
-
+/* список социальных сетей поведение при нажатии, наведении и задний фон */
 .footer-social li {
+  display: inline-block;
   background-color: #81b3d2;
 }
 
@@ -194,13 +214,11 @@ a {
 }
 
 /* website by шрифты */
-
 .footer-copyright {
   color: #000000;
 }
 
 /* лого академии поведение при нажатии и наведении */
-
 .button-common {
   color: #ffffff;
   text-transform: uppercase;
@@ -210,40 +228,21 @@ a {
   border: none;
 }
 
-.button-modal:hover {
+.button-modal:hover, .book:hover {
   background-color: #604e43;
 }
 
-.book:hover {
-  background-color: #604e43;
-}
-
-.button-modal:active {
+.button-modal:active, .book:active {
   background-color: #503e33;
 
   color: #928a85;
 }
 
-.book:active {
-  background-color: #503e33;
-
-  color: #928a85;
-}
-
-.button-find:hover {
+.button-find:hover, .detail:hover {
   background-color: #669ec0;
 }
 
-.detail:hover {
-  background-color: #669ec0;
-}
-
-.detail:active {
-  color: #88b6d1;
-  background-color: #5496bd;
-}
-
-.button-find:active {
+.detail:active, .button-find:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
@@ -266,28 +265,24 @@ a {
   height: 58px;
 }
 
-.button-find {
+.button-find, .button-modal {
   color: #ffffff;
   font-size: 21px;
-}
-
-.button-modal {
-  color: #ffffff;
-  font-size: 21px;
+  line-height: 26px;
 }
 
 .detail {
-  display: block;
   width: 110px;
-  height: 27px;
-}
-.book {
-  display: block;
-  width: 142px;
-  height: 27px;
 }
 
-.detail.book {
+.book {
+  width: 142px;
+}
+
+.detail, .book {
+  display: block;
+  height: 27px;
+
   color: #ffffff;
   font-weight: bold;
   line-height: 21px;
