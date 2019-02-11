@@ -35,38 +35,30 @@ a {
 }
 
 /* активная вкладка навигации */
-.site-navigation-current a {
-  color: #766357;
-}
-
-.site-navigation-current a:hover {
-  color: #766357;
-}
-
-.site-navigation-current a:active {
+.site-navigation-current a, .site-navigation-current a:hover {
   color: #766357;
 }
 
 /* */
-.advantages-1-2 {
+.main-advantages {
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
 /* */
-.container-advantages, .advantages-3-4-5, .interest-info {
+.container-advantages, .secondary-advantages, .interest-info {
   color: #333333;
 }
 
 /* */
-.advantages-3-4-5 {
+.secondary-advantages {
 
   background-color: #eeeeee;
 }
 
 /* */
-.advantages-3-4-5 h3 {
+.secondary-advantages h3 {
   color: #000000;
 }
 
