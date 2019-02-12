@@ -1,30 +1,31 @@
 body {
   margin: 0;
+  padding: 0;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #ffffff;
 }
 
-/* убраны подчеркивания ссылок */
+/* у ссылок убраны подчеркивания и задан цвет шрифта */
+
 a {
   text-decoration: none;
+  color: #000000;
 }
 
-/* у элементов списка убраны маркеры */
+/* общие свойства списков */
+
 .list-style {
   list-style: none;
 }
 
-/* поведение элементов навигации при нажатии и наведении */
-.site-navigation a {
-  font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
-}
+/* поведение ссылок навигации при наведении и нажатии */
 
 .site-navigation a:hover {
   color: #81b3d2;
@@ -34,248 +35,170 @@ a {
   color: #b2b2b2;
 }
 
-/* активная вкладка навигации */
+/* мультифоновое изображение */
+
+.main-background {
+  background: url("../img/welcome.svg") no-repeat,
+              url("../img/polygon.svg") no-repeat,
+              url("../img/background.jpg") no-repeat;
+  height: 500px;
+}
+
+/* свойства абзаца "Седона - небольшой..." */
+/* #visitsedona свойства */
+/* свойства названий жилья */
+
+.container-lead, .social-hashtag, .item-name {
+  font-size: 21px;
+}
+
+/* свойства абзаца "Рассмотрим 5 причин..." */
+
+.container-advantages {
+  font-weight: normal;
+  color: #333333;
+}
+
+/* свойства заголовка "Заинтересовались?" */
+
+.interest {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* свойства абзаца "Укажите предполагаемые..." */
+
+.interest-info {
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+
+/* общие свойства кнопок */
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+/* общие свойства кнопок popup'а index */
+
+.button-modal {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* свойства коричневых кнопок и поведение при наведении и нажатии */
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-brown:hover {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  color: #928a85;
+
+  background-color: #503e33;
+}
+
+/* свойства синих кнопок и поведение при наведении и нажатии */
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-blue:hover {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
+/* свойства полей ввода формы и поведение при наведении и фокусе */
+
+.book-date {
+  font-weight: bold;
+
+  background-color: #f2f2f2;
+
+  border: 2px solid #f2f2f2;
+}
+
+.book-date:hover {
+  background-color: #ebebeb;
+
+  border: 2px solid #ebebeb;
+}
+
+
+.book-date:focus {
+  background-color: #ffffff;
+
+  border: 2px solid #e5e5e5;
+}
+
+/* цвет заднего фона футера */
+
+.main-footer {
+  background-color: #fefefe;
+}
+
+/* свойства абзаца "Website by" */
+
+.footer-copyright {
+  font-weight: normal;
+}
+
+/* задание тени блоку popup'а */
+
+.book-form {
+  box-shadow: 0 0 12px 0 #ededed;
+}
+
+/* цвет текущей страницы навигации */
+
 .site-navigation-current a, .site-navigation-current a:hover {
   color: #766357;
 }
 
-/* */
-.main-advantages {
-  color: #ffffff;
+/* свойства типа жилья и цены */
 
-  background-color: #81b3d2;
-}
-
-/* */
-.container-advantages, .secondary-advantages, .interest-info {
+.item-info {
+  line-height: 21px;
   color: #333333;
+  font-weight: normal;
 }
 
-/* */
-.secondary-advantages {
+/*  общие свойства кнопок каталога */
 
-  background-color: #eeeeee;
+.button-catalog {
+  line-height: 21px;
 }
 
-/* */
-.secondary-advantages h3 {
-  color: #000000;
+/* свойства рейтинга жилья */
+
+.item-rating {
+  line-height: 21px;
+  color: #666666;
+  font-weight: normal;
+
+  background-color: #f2f2f2;
 }
 
-/* заголовки товаров */
-.item-header {
-  font-size: 21px;
-  color: #000000;
-}
+/* рамки товаров */
 
-.item-header:hover {
-  color: #81b3d2;
-}
-
-.item-header:active {
-  color: #cacaca;
-}
-
-/* */
 .catalog-item {
   border-top: 1px solid #e5e5e5;
 }
 
 .catalog-item:last-of-type {
   border-bottom: 1px solid #e5e5e5;
-}
-
-/* тип жилья и цена */
-.catalog-item-type, .catalog-item-price {
-  color: #333333;
-  line-height: 21px;
-}
-
-/* */
-.catalog-item-rating {
-  color: #666666;
-  line-height: 21px;
-
-  background-color: #f2f2f2;
-}
-
-/* задание сложного фона в контейнере и его центрирование */
-.complex-image {
-  background: url("../img/welcome.svg") no-repeat,
-              url("../img/polygon.svg") no-repeat,
-              url("../img/background.jpg") no-repeat;
-  height: 508px;
-}
-
-/* седона - небольшой ... шрифт*/
-.container-lead {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  text-align: center;
-  font-weight: bold;
-
-  background-color: #ffffff;
-}
-
-/* рассмотрим 5 причин шрифт*/
-.container-advantages {
-  text-align: center;
-
-  background-color: #ffffff;
-}
-
-/* заинтересовались шрифт*/
-.interest {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-align: center;
-
-  background-color: #ffffff;
-}
-
-/* укажите предполагаемые... шрифт*/
-.interest-info {
-  line-height: 26px;
-  text-align: center;
-
-  background-color: #ffffff;
-}
-
-/* */
-.book-form {
-  font-weight: bold;
-}
-
-/* */
-.book-form input {
-  font-weight: bold;
-  color: #000000;
-
-  background-color: #f2f2f2;
-
-  border: none;
-}
-
-.book-form input:hover {
-  color: #000000;
-
-  background-color: #ebebeb;
-}
-
-.book-form input:focus {
-  color: #000000;
-
-  background-color: #ffffff;
-
-  border: 2px #e5e5e5 solid;
-}
-
-/* */
-.book-count input {
-  text-align: center;
-}
-
-/* задний фон футера */
-.main-footer {
-  background-color: #fefefe;
-}
-
-/* #visitsedona шрифты */
-.social-hashtag {
-  font-size: 21px;
-  font-weight: bold;
-  color: #000000;
-
-  background-color: #fefefe;
-}
-
-/* список социальных сетей поведение при нажатии, наведении и задний фон */
-.footer-social li {
-  display: inline-block;
-  background-color: #81b3d2;
-}
-
-.footer-social li:hover {
-  background-color: #669ec0;
-}
-
-.footer-social li:active {
-  background-color: #5496bd;
-}
-
-/* website by шрифты */
-.footer-copyright {
-  color: #000000;
-}
-
-/* лого академии поведение при нажатии и наведении */
-.button-common {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-
-  border: none;
-}
-
-.button-modal:hover, .book:hover {
-  background-color: #604e43;
-}
-
-.button-modal:active, .book:active {
-  background-color: #503e33;
-
-  color: #928a85;
-}
-
-.button-find:hover, .detail:hover {
-  background-color: #669ec0;
-}
-
-.detail:active, .button-find:active {
-  color: #88b6d1;
-  background-color: #5496bd;
-}
-
-.button-blue {
-  background-color: #81b3d2;
-}
-
-.button-brown {
-  background-color: #766357;
-}
-
-.button-modal {
-  width: 568px;
-  height: 86px;
-}
-
-.button-find {
-  width: 458px;
-  height: 58px;
-}
-
-.button-find, .button-modal {
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.detail {
-  width: 110px;
-}
-
-.book {
-  width: 142px;
-}
-
-.detail, .book {
-  display: block;
-  height: 27px;
-
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 21px;
 }

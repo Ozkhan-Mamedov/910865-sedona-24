@@ -14,7 +14,7 @@
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона">
         </a>
-        <ul class="list-style site-navigation">
+        <ul class="site-navigation list-style">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -31,12 +31,12 @@
       </nav>
     </header>
     <main class="container">
-      <div class="complex-image">
+      <div class="main-background">
       </div>
       <p class="container-lead">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
       <p class="container-advantages">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
       <h2 class="visually-hidden">Преимущества Седоны</h2>
-      <ul class="list-style advantages">
+      <ul class="list-style">
         <li class="main-advantages">
           <h3>Настоящий городок</h3>
           <span>&#8470;&nbsp;1</span>
@@ -84,46 +84,46 @@
       <h2 class="interest">Заинтересовались?</h2>
       <p class="interest-info">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
       <section class="modal">
-        <button class="button-common button-brown button-modal modal-search">Поиск гостиницы в&nbsp;Седоне</button>
+        <button class="button-modal button-brown button">Поиск гостиницы в&nbsp;Седоне</button>
         <h3 class="visually-hidden">Форма поиска гостиницы</h3>
         <form class="book-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="book-date">
+          <p>
             <label for="book-arrival">Дата заезда:<img src="img/calendar.svg" alt=""></label>
-            <input id="book-arrival" type="text" name="arrival-date" placeholder="24 апреля 2017">
+            <input class="book-date" id="book-arrival" type="text" name="arrival-date" placeholder="24 апреля 2017">
           </p>
-          <p class="book-date">
+          <p>
             <label for="book-departure">Дата выезда:<img src="img/calendar.svg" alt=""></label>
-            <input id="book-departure" type="text" name="departure-date" placeholder="4 июля 2017">
+            <input class="book-date" id="book-departure" type="text" name="departure-date" placeholder="4 июля 2017">
           </p>
-          <p class="book-count">
+          <p>
             <label for="book-adults-num">Взрослые:</label>
-            <input id="book-adults-num" type="text" name="adults-num" placeholder="2">
+            <input class="book-date" id="book-adults-num" type="text" name="adults-num" placeholder="2">
           </p>
-          <p class="book-count">
+          <p>
             <label for="book-children-num">Дети:</label>
-            <input id="book-children-num" type="text" name="children-num" placeholder="0">
+            <input class="book-date" id="book-children-num" type="text" name="children-num" placeholder="0">
           </p>
-          <button class="button-common button-blue button-find" type="submit">Найти</button>
+          <button class="button-modal button-blue button" type="submit">Найти</button>
         </form>
       </section>
       <img src="img/map.jpg" alt="Расположение на карте">
     </main>
     <footer class="main-footer">
       <a class="social-hashtag" href="#">#visitSEDONA</a>
-      <ul class="list-style footer-social">
+      <ul class="footer-social list-style">
         <li>
-          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button button-blue" href="#">Twitter</a>
         </li>
         <li>
-          <a class="social-button" href="#">Facebook</a>
+          <a class="social-button button-blue" href="#">Facebook</a>
         </li>
         <li>
-          <a class="social-button" href="#">Youtube</a>
+          <a class="social-button button-blue" href="#">Youtube</a>
         </li>
       </ul>
       <p class="footer-copyright">
         Website&nbsp;by
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
   </body>
