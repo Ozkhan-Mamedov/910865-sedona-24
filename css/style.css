@@ -5,24 +5,30 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
-
-  background-color: #ffffff;
 }
 
 /* у ссылок убраны подчеркивания и задан цвет шрифта */
 
 a {
   text-decoration: none;
-  color: #000000;
 }
 
 /* общие свойства списков */
 
 .list-style {
   list-style: none;
+}
+
+/* свойства списка навигации */
+/* свойства абзаца "Cедона - небольшой..." */
+/* свойства #visitsedona */
+/* свойства надписей к полям ввода */
+
+.site-navigation, .container-lead, .social-hashtag, .book-form label {
+  font-weight: bold;
 }
 
 /* поведение ссылок навигации при наведении и нажатии */
@@ -55,13 +61,13 @@ a {
 /* свойства абзаца "Рассмотрим 5 причин..." */
 
 .container-advantages {
-  font-weight: normal;
   color: #333333;
 }
 
 /* свойства заголовка "Заинтересовались?" */
 
 .interest {
+  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
 }
@@ -70,7 +76,6 @@ a {
 
 .interest-info {
   line-height: 24px;
-  font-weight: normal;
   color: #333333;
 }
 
@@ -79,6 +84,7 @@ a {
 .button {
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
 
   border: none;
 }
@@ -125,8 +131,8 @@ a {
 /* свойства полей ввода формы и поведение при наведении и фокусе */
 
 .book-date {
+  line-height: 26px;
   font-weight: bold;
-
   background-color: #f2f2f2;
 
   border: 2px solid #f2f2f2;
@@ -145,19 +151,7 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-/* цвет заднего фона футера */
-
-.main-footer {
-  background-color: #fefefe;
-}
-
-/* свойства абзаца "Website by" */
-
-.footer-copyright {
-  font-weight: normal;
-}
-
-/* задание тени блоку popup'а */
+/* свойства блока popup'а */
 
 .book-form {
   box-shadow: 0 0 12px 0 #ededed;
@@ -174,7 +168,6 @@ a {
 .item-info {
   line-height: 21px;
   color: #333333;
-  font-weight: normal;
 }
 
 /*  общие свойства кнопок каталога */
@@ -188,7 +181,6 @@ a {
 .item-rating {
   line-height: 21px;
   color: #666666;
-  font-weight: normal;
 
   background-color: #f2f2f2;
 }
