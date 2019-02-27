@@ -8,12 +8,25 @@ body {
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+  position: relative;
 }
 
 /* у ссылок убраны подчеркивания и задан цвет шрифта */
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 16px 15px rgba(0,0,0,0.2);
 }
 
 /* общие свойства списков */
@@ -45,12 +58,13 @@ a {
 
 .main-background {
   height: 518px;
+  /*height: 508px; по макету?*/
 
   background: url("../img/welcome.svg") no-repeat,
               url("../img/polygon.svg") no-repeat,
               url("../img/background.jpg") no-repeat;
-  background-size: 459px, contain, cover;
-  background-position: center 76px, center 450px, center -83px;
+  background-size: 459px 353px, contain, cover;
+  background-position: center 75px, center bottom, center -56px;
 }
 
 /* свойства абзаца "Седона - небольшой..." */
@@ -157,7 +171,7 @@ a {
 /* свойства блока popup'а */
 
 .book-form {
-  box-shadow: 0 0 12px 0 #ededed;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
 }
 
 /* цвет текущей страницы навигации */
@@ -215,15 +229,44 @@ a {
 
 .site-navigation {
   display: flex;
-  padding: 0;
+  flex-wrap: wrap;
   margin: 0;
-  justify-content: space-around;
   align-items: center;
-  height: 56px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  /*height: 56px;*/
+
+  position: relative;
 }
 
-.logo {
-  padding-top: 23px;
+.site-navigation li {
+  width: 239px;
+}
+
+.site-navigation-item-left, .site-navigation-item-right {
+  line-height: 12px;
+}
+
+.site-navigation-item-left {
+  text-align: left;
+}
+
+.site-navigation-item-right {
+  text-align: right;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -70px;
+  width: 140px;
+}
+
+.site-navigation-map {
+  margin-left: auto;
 }
 
 .lead-wrapper {
@@ -268,6 +311,9 @@ a {
 .interest-info {
   padding: 0;
   margin: 0;
+  width: 460px;
+  padding-left: 370px;
+  padding-right: 370px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -280,11 +326,11 @@ a {
   width: 568px;
   /*margin-left: 436px;*/
 
-  /*position: absolute;*/
+  position: absolute;
   padding-top: 0;
   height: 395px;
   display: block;
-  position: relative;
+  /*position: relative;*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -302,54 +348,91 @@ a {
 .button-modal.button-blue {
   width: 458px;
   padding-top: 17px;
-  padding-left: 196px;
-  padding-right: 198px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 17px;
-}
-
-.button-modal.button-brown {
-  width: 569px;
-  padding-left: 140px;
-  padding-right: 139px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.button-wrapper {
   text-align: center;
 }
 
+.button-modal.button-brown {
+  width: 568px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+/*.button-search-wrapper {*/
+  /*text-align: center;*/
+/*  width: 568px;
+  margin: 0 auto;
+
+  position: relative;
+}*/
+
+.modal {
+  width: 568px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.button-find-wrapper {
+  margin: 0 auto;
+  width: 458px;
+}
+
 .main-footer {
-  opacity: 0.9;
+  /*opacity: 0.9;*/
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height: 120px;
+  align-items: center;
+
+  padding-bottom: 30px;
+  padding-top: 36px;
+  /*height: 120px;*/
+}
+
+.index-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .social-button {
   display: inline-block;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  /*margin-right: 6px;*/
 }
 
 .footer-social {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 36px;
-  align-self: flex-start;
+  flex-wrap: wrap;
+  line-height: 0;
+  /*align-items: flex-start;*/
+  /*margin-top: 36px;*/
 }
 
 .social-youtube {
-  margin-right: 0px;
+  /*margin-right: 0px;*/
 }
 
 .footer-social li {
-  height: 48px;
+  /*height: 48px;*/
   width: 46px;
   margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .social-twitter::before {
@@ -362,7 +445,7 @@ a {
 
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
-  background-position: 15px 17px;
+  background-position: 50% 50%;
 }
 
 .social-facebook::before {
@@ -375,7 +458,7 @@ a {
 
   background-image: url("../img/facebook.svg");
   background-repeat: no-repeat;
-  background-position: 17px 13px;
+  background-position: 50% 50%;
 }
 
 .social-youtube::before {
@@ -388,7 +471,7 @@ a {
 
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
-  background-position: 13px 16px;
+  background-position: 50% 50%;
 }
 
 .social-twitter:active::before, .social-facebook:active::before, .social-youtube:active::before {
@@ -396,30 +479,42 @@ a {
 }
 
 .footer-copyright {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  margin-bottom: 56px;
-  margin-top: 54px;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
+  /*margin-bottom: 56px;
+  margin-top: 54px;*/
 
   align-items: center;
 }
 
-.social-hashtag {
-  margin-bottom: 54px;
-  margin-top: 51px;
+.copyright-logo-container {
+  margin-left: 8px;
+  line-height: 0;
 }
 
-.footer-copyright:hover g {
+.social-hashtag {
+  /*margin-bottom: 54px;
+  margin-top: 51px;*/
+}
+
+.Kappa {
+  font-size: 0;
+}
+
+.copyright-logo-container:hover g {
   fill: #81b3d2;
 }
 
-.footer-copyright:active g {
+.copyright-logo-container:active g {
   fill: #bdbbbc;
 }
 
 .footer-copyright svg {
-  margin-left: 9px;
-  margin-top: 10px;
+  /*margin-left: 8px;*/
+  /*margin-top: 10px;*/
 }
 
 .catalog-list {
@@ -430,9 +525,9 @@ a {
 .catalog-item-info {
   display: flex;
   padding-top: 30px;
-  padding-left: 113px;
+  padding-left: 72px;
   padding-bottom: 30px;
-  padding-right: 113px;
+  padding-right: 73px;
   align-items: center;
 }
 
@@ -535,6 +630,7 @@ a {
 .container-children {
   width: 30px;
   margin-left: 79px;
+  text-align: center;
 }
 
 .children-num-pos[for="book-children-num"] {
@@ -568,7 +664,10 @@ a {
 }
 
 .star-rating {
-  margin-top: 0;
+  /*margin-top: 0;*/
+  margin: 0;
+  padding: 0;
+  text-align: right;
 }
 
 .star-rating-list {
