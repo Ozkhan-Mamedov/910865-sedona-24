@@ -500,7 +500,7 @@ a {
   margin-top: 51px;*/
 }
 
-.Kappa {
+.footer-copyright-description {
   font-size: 0;
 }
 
@@ -561,6 +561,14 @@ a {
   /*margin-bottom: 6px;*/
   line-height: 0;
   margin-bottom: 0;
+}
+
+.item-name:hover {
+  color: #81b3d2;
+}
+
+.item-name:active {
+  color: #cacaca;
 }
 
 .catalog-button-wrapper {
@@ -716,4 +724,8 @@ a {
   display: block;
   /*margin-top: 54px;*/
   text-align: center;
+}
+
+.link-style {
+  color: #000000;
 }
