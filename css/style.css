@@ -920,17 +920,17 @@ a {
   padding-bottom: 32px;
 }
 
-.sub-main-advantages p:nth-child(1) {
+.sub-advantage-1 {
   width: 252px;
   margin: 0 auto;
 }
 
-.sub-main-advantages p:nth-child(2) {
+.sub-advantage-2 {
   margin: 0 auto;
   width: 284px;
 }
 
-.sub-main-advantages p:nth-child(3) {
+.sub-advantage-3 {
   margin: 0 auto;
   width: 273px;
 }
@@ -947,17 +947,17 @@ a {
   margin-bottom: 32px;
 }
 
-.secondary-advantages p:nth-child(1) {
+.secondary-advantage-1 {
   width: 208px;
   margin: 0 auto;
 }
 
-.secondary-advantages p:nth-child(2) {
+.secondary-advantage-2 {
   width: 262px;
   margin: 0 auto;
 }
 
-.secondary-advantages p:nth-child(3) {
+.secondary-advantage-3 {
   width: 246px;
   margin: 0 auto;
 }
