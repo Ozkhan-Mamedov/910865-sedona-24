@@ -64,7 +64,7 @@ a {
               url("../img/polygon.svg") no-repeat,
               url("../img/background.jpg") no-repeat;
   background-size: 459px 353px, contain, cover;
-  background-position: center 75px, center bottom, center -56px;
+  background-position: center 75px, center calc(100% + 1px), center -56px;
 }
 
 /* свойства абзаца "Седона - небольшой..." */
@@ -728,4 +728,240 @@ a {
 
 .link-style {
   color: #000000;
+}
+
+/* базовая стилизация */
+
+/* стилизация списка преимуществ */
+
+.advantages-list, .sub-main-advantages {
+  padding: 0;
+  margin: 0;
+}
+
+/* общая организация отступов заголовков и абзацев */
+
+.advantages-list p, .advantages-list h3 {
+  margin: 0 auto;
+}
+
+/* стилизация заголовков преимуществ */
+
+.advantages-list h3 {
+  font-size: 21px;
+  line-height: 19px;
+}
+
+/* стилизация блоков главных преимущств */
+
+.main-advantages-wrapper {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+/* иконки преимуществ через css */
+
+/* стилизация описаний преимущств */
+
+.advantage-info, .advantages-list span {
+  font-size: 14px;
+  line-height: 12px;
+
+  margin: 0 auto;
+}
+
+/* стилизация вторичных преимущств */
+
+.secondary-advantages {
+  background-color: #eeeeee;
+}
+
+/* стилизация описаний преимущств кроме главных */
+
+.sub-main-advantages p, .secondary-advantages span, .secondary-advantages p {
+  color: #333333;
+}
+
+/* сетка преимущстве */
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-advantages {
+  display: flex;
+}
+
+.main-advantages-wrapper {
+  width: 400px;
+  height: 256px; /* временно */
+}
+
+.main-advantages-image {
+  line-height: 0;
+}
+
+.sub-main-advantages {
+  display: flex;
+}
+
+.sub-main-advantages li {
+  width: 400px;
+  flex-shrink: 0;
+  height: 332px;
+
+  position: relative;
+}
+
+.secondary-advantages {
+  width: 400px;
+  height: 256px;
+}
+
+.main-advantages-wrapper h3 {
+  padding-top: 50px;
+  /*padding-left: 124px;
+  padding-right: 124px;*/
+  padding-bottom: 29px;
+  text-align: center;
+
+  margin: 0 auto;
+  line-height: 21px;
+  /*width: 150px;*/
+}
+
+.main-advantage-1 {
+  width: 122px;
+}
+
+.main-advantage-2 {
+  width: 151px;
+}
+
+.main-advantages-wrapper span {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.advantage-info {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.housing:before {
+  content: " ";
+
+  width: 75px;
+  height: 72px;
+
+  position: absolute;
+
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+
+  top: 60px;
+  left: 162px;
+}
+
+.food:before {
+  content: " ";
+
+  width: 74px;
+  height: 70px;
+
+  position: absolute;
+
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+
+  top: 61px;
+  left: 163px;
+}
+
+.souvenirs:before {
+  content: " ";
+
+  width: 64px;
+  height: 76px;
+
+  position: absolute;
+
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+
+  top: 56px;
+  left: 168px;
+}
+
+.main-advantage-1-info {
+  width: 280px;
+}
+
+.main-advantage-2-info {
+  width: 303px;
+}
+
+.main-advantages:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.main-advantage-2 {
+  width: 149.5px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.sub-main-advantages h3 {
+  padding-top: 164px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.sub-main-advantages p:nth-child(1) {
+  width: 252px;
+  margin: 0 auto;
+}
+
+.sub-main-advantages p:nth-child(2) {
+  margin: 0 auto;
+  width: 284px;
+}
+
+.sub-main-advantages p:nth-child(3) {
+  margin: 0 auto;
+  width: 273px;
+}
+
+.secondary-advantages h3 {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.secondary-advantages span {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.secondary-advantages p:nth-child(1) {
+  width: 208px;
+  margin: 0 auto;
+}
+
+.secondary-advantages p:nth-child(2) {
+  width: 262px;
+  margin: 0 auto;
+}
+
+.secondary-advantages p:nth-child(3) {
+  width: 246px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  position: relative;
 }
