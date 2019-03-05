@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -20,6 +20,21 @@ a {
   text-decoration: none;
 }
 
+/* цвет ссылок */
+
+.link-style {
+  color: #000000;
+}
+
+/* отступы абзацев */
+
+.paragraph-style-reset {
+  margin: 0;
+  padding: 0;
+}
+
+/* свойства для контейнеров контента */
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -33,6 +48,9 @@ a {
 
 .list-style {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 /* свойства списка навигации */
@@ -183,7 +201,6 @@ a {
 /* свойства типа жилья и цены */
 
 .item-info {
-  line-height: 21px;
   color: #333333;
 }
 
@@ -230,13 +247,11 @@ a {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   align-items: center;
   padding-left: 73px;
   padding-right: 73px;
   padding-top: 22px;
   padding-bottom: 22px;
-  /*height: 56px;*/
 
   position: relative;
 }
@@ -290,11 +305,6 @@ a {
   margin-right: auto;
 }
 
-.container-advantages {
-  padding: 0;
-  margin: 0;
-}
-
 .interest-wrapper {
   padding: 0;
   margin: 0;
@@ -321,18 +331,14 @@ a {
 }
 
 .book-form {
-  /*display: flex;
-  flex-direction: column;*/
   background-color: #ffffff;
 
   width: 568px;
-  /*margin-left: 436px;*/
 
   position: absolute;
   padding-top: 0;
   height: 395px;
   display: block;
-  /*position: relative;*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -365,14 +371,6 @@ a {
   text-align: center;
 }
 
-/*.button-search-wrapper {*/
-  /*text-align: center;*/
-/*  width: 568px;
-  margin: 0 auto;
-
-  position: relative;
-}*/
-
 .modal {
   width: 568px;
   margin: 0 auto;
@@ -386,8 +384,6 @@ a {
 }
 
 .main-footer {
-  /*opacity: 0.9;*/
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -395,7 +391,6 @@ a {
 
   padding-bottom: 30px;
   padding-top: 36px;
-  /*height: 120px;*/
 }
 
 .index-footer {
@@ -413,25 +408,15 @@ a {
   display: inline-block;
   width: 46px;
   height: 48px;
-  /*margin-right: 6px;*/
 }
 
 .footer-social {
   display: flex;
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
   line-height: 0;
-  /*align-items: flex-start;*/
-  /*margin-top: 36px;*/
-}
-
-.social-youtube {
-  /*margin-right: 0px;*/
 }
 
 .footer-social li {
-  /*height: 48px;*/
   width: 46px;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -481,13 +466,8 @@ a {
 }
 
 .footer-copyright {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  /*flex-direction: row;*/
-  /*margin-bottom: 56px;
-  margin-top: 54px;*/
 
   align-items: center;
 }
@@ -495,11 +475,6 @@ a {
 .copyright-logo-container {
   margin-left: 8px;
   line-height: 0;
-}
-
-.social-hashtag {
-  /*margin-bottom: 54px;
-  margin-top: 51px;*/
 }
 
 .footer-copyright-description {
@@ -512,16 +487,6 @@ a {
 
 .copyright-logo-container:active g {
   fill: #bdbbbc;
-}
-
-.footer-copyright svg {
-  /*margin-left: 8px;*/
-  /*margin-top: 10px;*/
-}
-
-.catalog-list {
-  padding: 0;
-  margin: 0;
 }
 
 .catalog-item-info {
@@ -544,24 +509,14 @@ a {
   justify-content: space-between;
   height: 90px;
   width: 258px;
-  margin-top: 0;
-  padding-top: 0;
 }
 
 .item-info-container {
-  /*margin-bottom: 10px;*/
-  /*margin-bottom: 8px;*/
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-
   font-size: 0;
 }
 
 .item-info-wrapper h3 {
   margin-top: 0;
-  /*margin-bottom: 6px;*/
-  line-height: 0;
   margin-bottom: 0;
 }
 
@@ -577,15 +532,10 @@ a {
   display: flex;
 }
 
-.button-catalog {
-  width: 110px;
-  margin-right: 6px;
-}
-
 .button-catalog.button-blue {
   width: 110px;
-  margin-right: 6px;
   text-align: center;
+  margin-right: 6px;
 }
 
 .button-catalog.button-brown {
@@ -597,38 +547,24 @@ a {
   display: inline-block;
   width: 110px;
   margin-right: 4px;
-  line-height: 12px;
-  /*margin-right: 6px;*/
   font-size: 14px;
   vertical-align: middle;
 }
 
 .catalog-item-image {
-  padding:0;
-  margin: 0;
   width: 135px;
   height: 90px;
   margin-right: 30px;
 }
 
 .item-name {
-  padding: 0;
-  margin: 0;
-  font-size: 21px;
   display: block;
-  box-sizing: border-box;
   line-height: 18px;
 }
 
 .rating-wrapper {
-  margin-top: 0;
-  padding-top: 0;
   width: 109px;
   margin-left: auto;
-  /*min-height: 91px;*/
-
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-social li:last-child {
@@ -703,9 +639,6 @@ a {
 }
 
 .star-rating {
-  /*margin-top: 0;*/
-  margin: 0;
-  padding: 0;
   text-align: right;
 
   margin-bottom: 50px;
@@ -724,22 +657,10 @@ a {
 
 .item-rating {
   display: block;
-  /*margin-top: 54px;*/
   text-align: center;
 }
 
-.link-style {
-  color: #000000;
-}
-
 /* базовая стилизация */
-
-/* стилизация списка преимуществ */
-
-.advantages-list, .sub-main-advantages {
-  padding: 0;
-  margin: 0;
-}
 
 /* общая организация отступов заголовков и абзацев */
 
@@ -768,8 +689,6 @@ a {
 .advantage-info, .advantages-list span {
   font-size: 14px;
   line-height: 12px;
-
-  margin: 0 auto;
 }
 
 /* стилизация вторичных преимущств */
@@ -823,14 +742,10 @@ a {
 
 .main-advantages-wrapper h3 {
   padding-top: 50px;
-  /*padding-left: 124px;
-  padding-right: 124px;*/
   padding-bottom: 29px;
   text-align: center;
 
-  margin: 0 auto;
   line-height: 21px;
-  /*width: 150px;*/
 }
 
 .main-advantage-1 {
@@ -849,7 +764,6 @@ a {
 
 .advantage-info {
   text-align: center;
-  margin: 0 auto;
   line-height: 21px;
 }
 
@@ -912,7 +826,6 @@ a {
 
 .main-advantage-2 {
   width: 151px;
-  margin: 0 auto;
   line-height: 21px;
 }
 
@@ -924,16 +837,13 @@ a {
 
 .sub-advantage-1 {
   width: 252px;
-  margin: 0 auto;
 }
 
 .sub-advantage-2 {
-  margin: 0 auto;
   width: 284px;
 }
 
 .sub-advantage-3 {
-  margin: 0 auto;
   width: 273px;
 }
 
@@ -951,17 +861,14 @@ a {
 
 .secondary-advantage-1 {
   width: 208px;
-  margin: 0 auto;
 }
 
 .secondary-advantage-2 {
   width: 262px;
-  margin: 0 auto;
 }
 
 .secondary-advantage-3 {
   width: 246px;
-  margin: 0 auto;
 }
 
 .main-navigation {
@@ -993,25 +900,14 @@ a {
   color: #ffffff;
 
   padding: 0;
-  /*font-size: 14px;
-  line-height: 21px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 10px;
-  padding-right: 10px;*/
   text-transform: uppercase;
-
-  /*width: 133px;*/
 }
+
 /* сетка внутренней страницы */
 
 .content-filter fieldset {
   border: none;
   padding: 0;
-  margin: 0;
-}
-
-.content-filter .options-list {
   margin: 0;
 }
 
@@ -1043,15 +939,7 @@ a {
   margin-left: auto;
 }
 
-.search-result p {
-  margin: 0;
-  padding: 0;
-}
-
-.search-result ul {
-  padding: 0;
-  margin: 0;
-
+.sort-type {
   display: flex;
 }
 
@@ -1072,7 +960,7 @@ p.search-found {
 
 p.search-sort {
   font-size: 12px;
-  /*line-height: 18px;*/
+  font-weight: bold;
 
   margin-right: 40px;
 }
