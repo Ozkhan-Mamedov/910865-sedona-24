@@ -101,7 +101,7 @@
               <label for="book-departure">Дата выезда:</label>
             </p>
             <p class="form-input-container paragraph-style-reset">
-              <input class="book-date book-arrival-pos" id="book-arrival" type="text" name="arrival-date" placeholder="&nbsp;&nbsp;24 апреля 2017" autocomplete="off">
+              <input class="book-date book-arrival-pos" id="book-arrival" type="text" name="arrival-date" placeholder="24 апреля 2017" autocomplete="off">
               <svg class="calendar calendar-pos-1" fill="#cacaca" enable-background="new 0 0 21 22" height="22" viewBox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
                 <path d="m19.251 2.025h-2.845v-1.377c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938v-1.377c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377h-3.938v-1.377c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377h-2.843c-.966 0-1.75.822-1.75 1.837v16.302c0 1.015.784 1.836 1.75 1.836h17.501c.966 0 1.749-.821 1.749-1.836v-16.302c0-1.015-.783-1.837-1.749-1.837zm.437 18.139c0 .253-.195.459-.437.459h-17.501c-.241 0-.438-.206-.438-.459v-16.302c0-.253.196-.459.438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689v-1.378h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689v-1.378h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689v-1.378h2.845c.241 0 .437.206.437.459v16.302z"/>
                 <path d="m4.594 8.225h2.625v2.066h-2.625z"/>
@@ -114,7 +114,7 @@
                 <path d="m13.781 11.668h2.625v2.067h-2.625z"/>
                 <path d="m13.781 8.225h2.625v2.066h-2.625z"/>
               </svg>
-              <input class="book-date book-departure-pos" id="book-departure" type="text" name="departure-date" placeholder="&nbsp;&nbsp;4 июля 2017" autocomplete="off">
+              <input class="book-date book-departure-pos" id="book-departure" type="text" name="departure-date" placeholder="4 июля 2017" autocomplete="off">
                 <svg class="calendar calendar-pos-2" fill="#cacaca" enable-background="new 0 0 21 22" height="22" viewBox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
                   <path d="m19.251 2.025h-2.845v-1.377c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938v-1.377c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377h-3.938v-1.377c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377h-2.843c-.966 0-1.75.822-1.75 1.837v16.302c0 1.015.784 1.836 1.75 1.836h17.501c.966 0 1.749-.821 1.749-1.836v-16.302c0-1.015-.783-1.837-1.749-1.837zm.437 18.139c0 .253-.195.459-.437.459h-17.501c-.241 0-.438-.206-.438-.459v-16.302c0-.253.196-.459.438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689v-1.378h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689v-1.378h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689v-1.378h2.845c.241 0 .437.206.437.459v16.302z"/>
                   <path d="m4.594 8.225h2.625v2.066h-2.625z"/>
@@ -132,15 +132,19 @@
           <div class="people-num-wrapper">
             <p class="adult-wrapper paragraph-style-reset">
               <label class="adult-label-wrapper" for="book-adults-num">Взрослые:</label>
-              <a class="plus" href="#"><span class="visually-hidden">Плюс</span></a>
+              <!--<a class="plus" href="#"><span class="visually-hidden">Плюс</span></a>-->
+              <button class="minus" type="button"></button>
               <input class="book-date container-children" id="book-adults-num" type="text" name="adults-num" placeholder= "2" autocomplete="off">
-              <a class="minus" href="#"><span class="visually-hidden">Минус</span></a>
+              <button class="plus" type="button"></button>
+              <!--<a class="minus" href="#"><span class="visually-hidden">Минус</span></a>-->
             </p>
             <p class="children-wrapper paragraph-style-reset">
               <label class="children-num-pos" for="book-children-num">Дети:</label>
-              <a class="plus" href="#"><span class="visually-hidden">Плюс</span></a>
+              <!--<a class="plus" href="#"><span class="visually-hidden">Плюс</span></a>-->
+              <button class="minus" type="button"></button>
               <input class="book-date container-children container-children-pos" id="book-children-num" type="text" name= "children-num" placeholder="0" autocomplete="off">
-              <a class="minus" href="#"><span class="visually-hidden">Минус</span></a>
+              <button class="plus" type="button"></button>
+              <!--<a class="minus" href="#"><span class="visually-hidden">Минус</span></a>-->
             </p>
           </div>
           <div class="button-find-wrapper">

@@ -170,20 +170,20 @@ a {
   font-weight: bold;
   background-color: #f2f2f2;
 
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .book-date:hover {
   background-color: #ebebeb;
 
-  border: 2px solid #ebebeb;
+  border: 1px solid #ebebeb;
 }
 
 
 .book-date:focus {
   background-color: #ffffff;
 
-  border: 2px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 /* свойства блока popup'а */
@@ -575,7 +575,7 @@ a {
 }
 
 .book-date {
-  width: 344px;
+  width: 331px;
   height: 36px;
 
   margin-left: auto;
@@ -583,7 +583,7 @@ a {
 
 .adult-wrapper {
   /*margin-bottom: 26px;*/
-  margin-right: 91px;
+  /*margin-right: 91px;*/
 }
 
 .container-children {
@@ -600,12 +600,102 @@ a {
   /*margin-left: 65px;*/
 }
 
+.minus {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.minus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  margin-top: -2px;
+  margin-left: -5px;
+}
+
+.minus:hover::before {
+  background-color: #000000;
+}
+
+.minus:active::before {
+  background-color: #81b3d2;
+}
+
+/*.plus {
+  background: #cd6d45;
+  height: 100px;
+  width: 20px;
+  position: relative;
+  left: 40px;
+}
+
+.plus:after {
+  content: "";
+  height: 3px;
+  width: 11px;
+  background: #cd6d45;
+  position: absolute;
+  left: -40px;
+  top: 40px;
+}
+*/
+.plus {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
 .plus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  margin-top: -2px;
+  margin-left: -5px;
+}
+
+.plus::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+
+.plus:hover::before, .plus:hover::after {
+  background-color: #000000;
+}
+
+.plus:active::before, .plus:active::after {
+  background-color: #81b3d2;
+}
+
+/*.plus::before {
   content: "";
 
   width: 38px;
   height: 38px;
-  /*position: absolute;*/
+    position: absolute;
 
   background-color: #f2f2f2;
 }
@@ -615,10 +705,11 @@ a {
 
   width: 38px;
   height: 38px;
-  /*position: absolute;*/
+    position: absolute;
 
   background-color: #f2f2f2;
 }
+*/
 
 .container-children::placeholder {
   text-align: center;
@@ -1255,9 +1346,35 @@ ul.sort-order {
 }
 
 .adult-wrapper .adult-label-wrapper {
-  margin-right: 79px;
+  margin-right: 38px;
 }
 
 .children-wrapper .children-num-pos {
-  margin-right: 65px;
+  margin-right: 27px;
+}
+
+.container-children {
+  padding: 0;
+}
+
+.adult-wrapper, .children-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book-arrival-pos, .book-departure-pos {
+  padding-left: 13px;
+}
+
+.adult-wrapper {
+  margin-right: 53px;
+}
+
+.adult-label-wrapper {
+  margin-right: 38px;
+}
+
+.children-num-pos {
+  margin-right: 27px;
 }
