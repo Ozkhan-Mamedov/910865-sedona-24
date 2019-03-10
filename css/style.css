@@ -41,7 +41,7 @@ a {
 
   background-color: #ffffff;
 
-  box-shadow: 0 16px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 11px 15px rgba(0,0,0,0.2);
 }
 
 /* общие свойства списков */
@@ -256,20 +256,14 @@ a {
   position: relative;
 }
 
-.site-navigation li {
-  width: 239px;
-}
-
-.site-navigation-item-left, .site-navigation-item-right {
-  line-height: 12px;
-}
-
 .site-navigation-item-left {
   text-align: left;
+  margin-right: 148px;
 }
 
 .site-navigation-item-right {
   text-align: right;
+  margin-left: 162px;
 }
 
 .main-header-logo {
@@ -294,15 +288,10 @@ a {
 }
 
 .container-lead {
-  padding: 0;
-  margin: 0;
   margin-bottom: 30px;
 
-  display: flex;
-  justify-content: center;
-  width: 459px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 381px;
+  padding-right: 381px;
 }
 
 .interest-wrapper {
@@ -315,32 +304,23 @@ a {
 }
 
 .interest {
-  padding: 0;
   margin: 0;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 
 .interest-info {
   padding: 0;
   margin: 0;
-  width: 460px;
   padding-left: 370px;
   padding-right: 370px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .book-form {
   background-color: #ffffff;
 
-  /*width: 568px;*/
-
   position: absolute;
-  /*padding-top: 0;*/
-  /*height: 395px;*/
-  /*display: block;*/
-  /*margin-right: auto;
-  margin-left: auto;*/
   padding: 55px;
 }
 
@@ -581,23 +561,9 @@ a {
   margin-left: auto;
 }
 
-.adult-wrapper {
-  /*margin-bottom: 26px;*/
-  /*margin-right: 91px;*/
-}
-
 .container-children {
   width: 36px;
-  /*margin-left: 79px;*/
   text-align: center;
-}
-
-/*.children-num-pos[for="book-children-num"] {
-  margin-left: 91px;
-}*/
-
-.container-children-pos {
-  /*margin-left: 65px;*/
 }
 
 .minus {
@@ -630,24 +596,6 @@ a {
   background-color: #81b3d2;
 }
 
-/*.plus {
-  background: #cd6d45;
-  height: 100px;
-  width: 20px;
-  position: relative;
-  left: 40px;
-}
-
-.plus:after {
-  content: "";
-  height: 3px;
-  width: 11px;
-  background: #cd6d45;
-  position: absolute;
-  left: -40px;
-  top: 40px;
-}
-*/
 .plus {
   position: relative;
   width: 38px;
@@ -690,27 +638,6 @@ a {
   background-color: #81b3d2;
 }
 
-/*.plus::before {
-  content: "";
-
-  width: 38px;
-  height: 38px;
-    position: absolute;
-
-  background-color: #f2f2f2;
-}
-
-.minus::before {
-  content: "";
-
-  width: 38px;
-  height: 38px;
-    position: absolute;
-
-  background-color: #f2f2f2;
-}
-*/
-
 .container-children::placeholder {
   text-align: center;
 }
@@ -730,7 +657,6 @@ a {
 .calendar {
   position: absolute;
   right: 9px;
-  /*top: 9px;*/
 }
 
 .calendar-pos-1 {
@@ -783,7 +709,7 @@ a {
 
 .advantages-list h3 {
   font-size: 21px;
-  line-height: 19px;
+  line-height: 21px;
 }
 
 /* стилизация блоков главных преимущств */
@@ -825,9 +751,24 @@ a {
   display: flex;
 }
 
-.main-advantages-wrapper {
-  width: 400px;
-  height: 256px; /* временно */
+.main-advantages-wrapper h3 {
+  text-align: center;
+  line-height: 21px;
+  margin-bottom: 32px;
+}
+
+.advantages-wrapper-1 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 46px;
+  padding-top: 50px;
+}
+
+.advantages-wrapper-2 {
+  padding-left: 48px;
+  padding-right: 49px;
+  padding-bottom: 47px;
+  padding-top: 49px;
 }
 
 .main-advantages-image {
@@ -839,38 +780,44 @@ a {
 }
 
 .sub-main-advantages li {
-  width: 400px;
-  flex-shrink: 0;
-  height: 332px;
-
   position: relative;
 }
 
-.secondary-advantages {
-  width: 400px;
-  height: 256px;
+.advantages-wrapper-1 h3 {
+  padding-left: 79px;
+  padding-right: 79px;
 }
 
-.main-advantages-wrapper h3 {
-  padding-top: 50px;
-  padding-bottom: 29px;
-  text-align: center;
-
-  line-height: 21px;
+.first-point {
+  padding-left: 73px;
+  padding-right: 75px;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
-.main-advantage-1 {
-  width: 122px;
+.second-point {
+  padding-left: 59px;
+  padding-right: 59px;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
-.main-advantage-2 {
-  width: 151px;
+.third-point {
+  padding-left: 65px;
+  padding-right: 63px;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
 .main-advantages-wrapper span {
   display: block;
   text-align: center;
   margin-bottom: 32px;
+}
+
+.advantages-wrapper-2 h3 {
+  padding-left: 77px;
+  padding-right: 76px;
 }
 
 .advantage-info {
@@ -923,14 +870,6 @@ a {
   left: 168px;
 }
 
-.main-advantage-1-info {
-  width: 280px;
-}
-
-.main-advantage-2-info {
-  width: 303px;
-}
-
 .main-advantages:nth-child(3) {
   flex-direction: row-reverse;
 }
@@ -941,9 +880,8 @@ a {
 }
 
 .sub-main-advantages h3 {
-  padding-top: 164px;
   text-align: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .sub-advantage-1 {
@@ -959,9 +897,8 @@ a {
 }
 
 .secondary-advantages h3 {
-  padding-top: 50px;
   text-align: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .secondary-advantages span {
@@ -970,16 +907,8 @@ a {
   margin-bottom: 32px;
 }
 
-.secondary-advantage-1 {
-  width: 208px;
-}
-
-.secondary-advantage-2 {
-  width: 262px;
-}
-
 .secondary-advantage-3 {
-  width: 246px;
+  width: 248px;
 }
 
 .main-navigation {
@@ -1004,16 +933,6 @@ a {
   color: #ffffff;
 }
 
-/*.content-filter button {
-  border: 2px solid #ffffff;
-
-  background-color: rgba(255,255,255,0);
-  color: #ffffff;*/
-
-  /*padding: 0;*/
-  /*text-transform: uppercase;
-}*/
-
 /* сетка внутренней страницы */
 
 .content-filter fieldset {
@@ -1025,6 +944,7 @@ a {
 .content-filter {
   padding-left: 72px;
   padding-right: 72px;
+  padding-bottom: 1px;
   padding-top: 31px;
   display: flex;
 }
@@ -1044,10 +964,6 @@ a {
 
 .options-list li {
   padding-bottom: 36px;
-}
-
-.content-filter button {
-  /*margin-left: auto;*/
 }
 
 .sort-type {
@@ -1186,7 +1102,6 @@ ul.sort-order {
   width: 330px;
 
   color: #ffffff;
-  /*text-transform: uppercase;*/
 }
 
 .filter-range-title {
@@ -1319,6 +1234,7 @@ ul.sort-order {
 .date-input-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .form-header-container {
@@ -1340,7 +1256,6 @@ ul.sort-order {
 }
 
 .people-num-wrapper {
-  margin-top: 30px;
   display: flex;
   margin-bottom: 54px;
 }
@@ -1377,4 +1292,48 @@ ul.sort-order {
 
 .children-num-pos {
   margin-right: 27px;
+}
+
+.container-advantages {
+  padding-left: 356px;
+  padding-right: 356px;
+}
+
+.sub-first-point {
+  padding-bottom: 65px;
+  padding-top: 50px;
+  padding-left: 95px;
+  width: 208px;
+  padding-right: 97px;
+}
+
+.sub-first-point h3 {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.sub-second-point {
+  width: 262px;
+  padding-top: 50px;
+  padding-left: 69px;
+  padding-right: 69px;
+  padding-bottom: 65px;
+}
+
+.sub-second-point h3 {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.sub-third-point {
+  width: 246px;
+  padding-top: 50px;
+  padding-left: 77px;
+  padding-right: 77px;
+  padding-bottom: 65px;
+}
+
+.sub-third-point h3 {
+  padding-left: 73px;
+  padding-right: 73px;
 }
