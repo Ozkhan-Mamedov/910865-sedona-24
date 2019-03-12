@@ -14,7 +14,7 @@ body {
   position: relative;
 }
 
-/* у ссылок убраны подчеркивания и задан цвет шрифта */
+/* у ссылок убраны подчеркивания */
 
 a {
   text-decoration: none;
@@ -26,25 +26,14 @@ a {
   color: #000000;
 }
 
-/* отступы абзацев */
+/* обнуление отступов абзацев */
 
 .paragraph-style-reset {
   margin: 0;
   padding: 0;
 }
 
-/* свойства для контейнеров контента */
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-
-  background-color: #ffffff;
-
-  box-shadow: 0 11px 15px rgba(0,0,0,0.2);
-}
-
-/* общие свойства списков */
+/* обнуление отступов у списков и отмена декоративного выделения элементов списка */
 
 .list-style {
   list-style: none;
@@ -53,181 +42,7 @@ a {
   padding: 0;
 }
 
-/* свойства списка навигации */
-/* свойства абзаца "Cедона - небольшой..." */
-/* свойства #visitsedona */
-/* свойства надписей к полям ввода */
-
-.site-navigation, .container-lead, .social-hashtag, .book-form label {
-  font-weight: bold;
-}
-
-/* поведение ссылок навигации при наведении и нажатии */
-
-.site-navigation a:hover {
-  color: #81b3d2;
-}
-
-.site-navigation a:active {
-  color: #b2b2b2;
-}
-
-/* мультифоновое изображение */
-
-.main-background {
-  height: 518px;
-  /*height: 508px; по макету?*/
-
-  background: url("../img/welcome.svg") no-repeat,
-              url("../img/polygon.svg") no-repeat,
-              url("../img/background.jpg") no-repeat;
-  background-size: 459px 353px, contain, cover;
-  background-position: center 75px, center calc(100% + 1px), center -56px;
-}
-
-/* свойства абзаца "Седона - небольшой..." */
-/* #visitsedona свойства */
-/* свойства названий жилья */
-
-.container-lead, .social-hashtag, .item-name {
-  font-size: 21px;
-}
-
-/* свойства абзаца "Рассмотрим 5 причин..." */
-
-.container-advantages {
-  color: #333333;
-}
-
-/* свойства заголовка "Заинтересовались?" */
-
-.interest {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-}
-
-/* свойства абзаца "Укажите предполагаемые..." */
-
-.interest-info {
-  line-height: 24px;
-  color: #333333;
-}
-
-/* общие свойства кнопок */
-
-.button {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  border: none;
-}
-
-/* общие свойства кнопок popup'а index */
-
-.button-modal {
-  font-size: 21px;
-  line-height: 26px;
-}
-
-/* свойства коричневых кнопок и поведение при наведении и нажатии */
-
-.button-brown {
-  background-color: #766357;
-}
-
-.button-brown:hover {
-  background-color: #604e43;
-}
-
-.button-brown:active {
-  color: #928a85;
-
-  background-color: #503e33;
-}
-
-/* свойства синих кнопок и поведение при наведении и нажатии */
-
-.button-blue {
-  background-color: #81b3d2;
-}
-
-.button-blue:hover {
-  background-color: #669ec0;
-}
-
-.button-blue:active {
-  color: #88b6d1;
-
-  background-color: #5496bd;
-}
-
-/* свойства полей ввода формы и поведение при наведении и фокусе */
-
-.book-date {
-  line-height: 26px;
-  font-weight: bold;
-  background-color: #f2f2f2;
-
-  border: 1px solid #f2f2f2;
-}
-
-.book-date:hover {
-  background-color: #ebebeb;
-
-  border: 1px solid #ebebeb;
-}
-
-
-.book-date:focus {
-  background-color: #ffffff;
-
-  border: 1px solid #e5e5e5;
-}
-
-/* свойства блока popup'а */
-
-.book-form {
-  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
-}
-
-/* цвет текущей страницы навигации */
-
-.site-navigation-current a, .site-navigation-current a:hover {
-  color: #766357;
-}
-
-/* свойства типа жилья и цены */
-
-.item-info {
-  color: #333333;
-}
-
-/*  общие свойства кнопок каталога */
-
-.button-catalog {
-  line-height: 21px;
-}
-
-/* свойства рейтинга жилья */
-
-.item-rating {
-  line-height: 21px;
-  color: #666666;
-
-  background-color: #f2f2f2;
-}
-
-/* рамки товаров */
-
-.catalog-item {
-  border-top: 1px solid #e5e5e5;
-}
-
-.catalog-item:last-of-type {
-  border-bottom: 1px solid #e5e5e5;
-}
+/* прячем блоки с текстом, доступные для читалок */
 
 .visually-hidden {
   position: absolute;
@@ -242,139 +57,96 @@ a {
   overflow: hidden;
 }
 
-/* сетка */
+/* свойства хедера, главной части и футера */
 
-.site-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 
+  background-color: #ffffff;
+
+  box-shadow: 0 11px 15px rgba(0,0,0,0.2);
+}
+
+/* стилизация хедера */
+/* свойство для позиционирования логотипа относительно блока навигации */
+
+.main-navigation {
   position: relative;
 }
 
-.site-navigation-item-left {
-  text-align: left;
-  margin-right: 148px;
-}
-
-.site-navigation-item-right {
-  text-align: right;
-  margin-left: 162px;
-}
+/* позиционирование блока с логотипом */
 
 .main-header-logo {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -1px;
   margin-left: -70px;
   width: 140px;
   height: 72px;
   z-index: 1;
 }
 
-.site-navigation-map {
-  margin-left: auto;
+/* стилизация списка навигации */
+
+.site-navigation {
+  font-weight: bold;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
-.lead-wrapper {
-  padding-top: 65px;
-  padding-bottom: 57px;
+/* стилизация элементов списка слева от логотипа */
 
-  text-align: center;
+.site-navigation-item-left {
+  text-align: left;
+  width: 25%;
 }
 
-.container-lead {
-  margin-bottom: 30px;
+/* стилизация элементов списка справа от логотипа */
 
-  padding-left: 381px;
-  padding-right: 381px;
+.site-navigation-item-right {
+  text-align: right;
+  width: 25%;
 }
 
-.interest-wrapper {
-  padding: 0;
-  margin: 0;
-  padding-top: 58px;
-  padding-bottom: 54px;
+/* поведение элементов списка навигации при наведении */
 
-  text-align: center;
+.site-navigation a:hover {
+  color: #81b3d2;
 }
 
-.interest {
-  margin: 0;
-  margin-bottom: 38px;
-  padding-left: 452px;
-  padding-right: 452px;
+/* поведение элементов списка навигации при нажатии */
+
+.site-navigation a:active {
+  color: #b2b2b2;
 }
 
-.interest-info {
-  padding: 0;
-  margin: 0;
-  padding-left: 370px;
-  padding-right: 370px;
+/* цвет выбранного элемента списка навигации */
+
+.site-navigation-current a, .site-navigation-current a:hover {
+  color: #766357;
 }
 
-.book-form {
-  background-color: #ffffff;
+/* стилизация футера */
 
-  position: absolute;
-  padding: 55px;
-}
-
-.map {
-  z-index: -1;
-
-  display: block;
-}
-
-.book-form label {
-  padding: 0;
-  margin: 0;
-
-}
-
-.button-modal.button-blue {
-  width: 458px;
-  padding-top: 17px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 17px;
-  text-align: center;
-}
-
-.button-modal.button-brown {
-  width: 568px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-align: center;
-}
-
-.modal {
-  width: 568px;
-  margin: 0 auto;
-
-  position: relative;
-}
-
-.button-find-wrapper {
-  margin: 0 auto;
-  width: 458px;
-}
+/* общая стилизация футера */
 
 .main-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   padding-bottom: 30px;
   padding-top: 36px;
 }
+
+/* дополнительная стилизация футера на главной */
 
 .index-footer {
   position: absolute;
@@ -387,23 +159,67 @@ a {
   background-color: rgba(254, 254, 254, 0.9);
 }
 
-.social-button {
-  display: inline-block;
-  width: 46px;
-  height: 48px;
+/* стилизация хештега */
+
+.social-hashtag {
+  font-weight: bold;
+  font-size: 21px;
 }
+
+/* стилизация обертки хештега */
+
+.social-hashtag-wrapper {
+  width: 400px;
+  text-align: center;
+}
+
+/* стилизация списка социальных сетей */
 
 .footer-social {
   display: flex;
   flex-wrap: wrap;
   line-height: 0;
+  width: 400px;
+  justify-content: center;
 }
+
+/* стилизация элементов списка социальных сетей */
 
 .footer-social li {
   width: 46px;
   margin-right: 6px;
   margin-bottom: 6px;
 }
+
+/* общие свойства кнопок социальных сетей */
+
+.social-button {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+}
+
+/* цвет синих кнопок */
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+/* поведение синих кнопок при наведении */
+
+.button-blue:hover {
+  background-color: #669ec0;
+}
+
+/* поведение синих кнопок при нажатии */
+
+.button-blue:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
+/* кнопка "Твиттер" */
 
 .social-twitter::before {
   content: " ";
@@ -418,6 +234,8 @@ a {
   background-position: 50% 50%;
 }
 
+/* кнопка "Facebook" */
+
 .social-facebook::before {
   content: " ";
 
@@ -430,6 +248,8 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+/* кнопка "Youtube" */
 
 .social-youtube::before {
   content: " ";
@@ -444,127 +264,551 @@ a {
   background-position: 50% 50%;
 }
 
+/* поведение кнопок социальных сетей при нажатии */
+
 .social-twitter:active::before, .social-facebook:active::before, .social-youtube:active::before {
   opacity: 0.3;
 }
+
+/* стилизация блока авторства */
 
 .footer-copyright {
   display: flex;
   flex-wrap: wrap;
 
   align-items: center;
+  width: 400px;
+  justify-content: center;
 }
+
+/* позиционирование блока логотипа Академии */
 
 .copyright-logo-container {
   margin-left: 8px;
   line-height: 0;
 }
 
-.footer-copyright-description {
-  font-size: 0;
-}
+/* поведение логотипа Академии при наведении */
 
 .copyright-logo-container:hover g {
   fill: #81b3d2;
 }
 
+/* поведение логотипа Академии при нажатии */
+
 .copyright-logo-container:active g {
   fill: #bdbbbc;
 }
 
-.catalog-item-info {
+/* стилизация основного блока главной страницы */
+
+/* стилизация фонового изображения */
+
+.main-background {
+  height: 508px;
+
+  background: url("../img/welcome.svg") no-repeat,
+              url("../img/polygon.svg") no-repeat,
+              url("../img/background.jpg") no-repeat;
+  background-size: 459px 353px, contain, cover;
+  background-position: center 75px, center calc(100% + 1px), center -56px;
+}
+
+/* стилизация обертки "Седона - небольшой..." */
+
+.lead-wrapper {
+  padding-top: 65px;
+  padding-bottom: 57px;
+
+  text-align: center;
+}
+
+/* стилизация блока "Седона - небольшой..." */
+
+.container-lead {
+  margin-bottom: 30px;
+  padding-left: 381px;
+  padding-right: 381px;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* стилизация блока "Рассмотрим 5 причин..." */
+
+.container-advantages {
+  color: #333333;
+
+  padding-left: 356px;
+  padding-right: 356px;
+}
+
+/* сетка списка преимуществ */
+
+.advantages-list {
   display: flex;
-  padding-top: 30px;
-  padding-left: 72px;
-  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* сетка главных преимуществ */
+
+.main-advantages {
+  display: flex;
+}
+
+/* стилизация оберток главных преимуществ */
+
+.main-advantages-wrapper {
+  color: #ffffff;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+/* дополнительная стилизация обертки первого главного преимущства */
+
+.advantages-wrapper-1 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 45px;
+  padding-top: 42px;
+}
+
+/* дополнительная стилизация обертки второго главного преимущества */
+
+.advantages-wrapper-2 {
+  padding-left: 48px;
+  padding-right: 49px;
+  padding-bottom: 45px;
+  padding-top: 42px;
+}
+
+/* стилизация заголовков преимуществ */
+
+.advantages-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* дополнительная стилизация заголовка первого главного преимущества */
+
+.main-advantage-1 {
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+/* дополнительная стилизация заголовка второго главного преимущества */
+
+.main-advantage-2 {
+  padding-left: 77px;
+  padding-right: 76px;
+}
+
+/* стилизация номеров преимуществ */
+
+.advantages-list span {
+  line-height: 21px;
+  margin-bottom: 32px;
+
+  display: block;
+  text-align: center;
+}
+
+/* стилизация декоративного элемента идущего до номера главного преимущества */
+
+.main-advantages span::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #c2d9e8;
+  top: 125px;
+  left: 172px;
+}
+
+/* стилизация декоративного элемента идущего после номера главного преимущества */
+
+.main-advantages span::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #c2d9e8;
+  top: 125px;
+  left: 218px;
+}
+
+/* стилизация информации преимущств */
+
+.advantage-info {
+  text-align: center;
+  line-height: 21px;
+}
+
+/* выравнивание изображения и блока главного преимущества в 1 строку */
+
+.main-advantages-image {
+  line-height: 0;
+}
+
+/* поворот главной оси для второго главного преимущества */
+
+.main-advantages:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+/* сетка внутреннего списка первого главного преимущества */
+
+.sub-main-advantages {
+  display: flex;
+}
+
+/* относительное позиционирование для декоративных изображений */
+
+.sub-main-advantages li {
+  position: relative;
+}
+
+/* декоративное изображение жилья */
+
+.housing:before {
+  content: " ";
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  top: 60px;
+  left: 162px;
+}
+
+/* стилизация первого элемента подсписка */
+
+.first-point {
+  padding-left: 73px;
   padding-right: 73px;
-  align-items: center;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
-.item-image {
-  display: block;
-  height: 90px;
+/* декоративное изображение еды */
+
+.food:before {
+  content: " ";
+  width: 74px;
+  height: 70px;
+  position: absolute;
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  top: 61px;
+  left: 163px;
 }
 
-.item-info-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 90px;
-  width: 258px;
+/* стилизация второго элемента подсписка */
+
+.second-point {
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
-.item-info-container {
-  font-size: 0;
+/* декоративное изображение сувениров */
+
+.souvenirs:before {
+  content: " ";
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  top: 56px;
+  left: 168px;
 }
 
-.item-info-wrapper h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+/* стилизация третьего элемента подсписка */
+
+.third-point {
+  padding-left: 63px;
+  padding-right: 63px;
+  padding-bottom: 88px;
+  padding-top: 164px;
 }
 
-.item-name:hover {
-  color: #81b3d2;
+/* стилизация блока информации подсписка первого элемента */
+
+.sub-advantage-1 {
+  width: 254px;
 }
 
-.item-name:active {
-  color: #cacaca;
+/* стилизация блока информации подсписка второго элемента */
+
+.sub-advantage-2 {
+  width: 284px;
 }
 
-.catalog-button-wrapper {
-  display: flex;
+/* стилизация блока информации подсписка третьего элемента */
+
+.sub-advantages-3 {
+  width: 274px;
 }
 
-.button-catalog.button-blue {
-  width: 110px;
+/* стилизация фона вторичных преимуществ */
+
+.secondary-advantages {
+  background-color: #eeeeee;
+  position: relative;
+}
+
+/* стилизация цвета информации о преимуществах */
+
+.secondary-advantage-1, .secondary-advantage-2, .secondary-advantage-3, .sub-advantage-1, .sub-advantage-2, .sub-advantage-3 {
+  color: #333333;
+}
+
+/* стилизация цвета для номеров преимуществ */
+
+.secondary-advantages span {
+  color: #333333;
+}
+
+/* стилизация декоративного элемента идущего до номера вторичного преимущества */
+
+.secondary-advantages span::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #979797;
+  top: 133px;
+  left: 172px;
+}
+
+/* стилизация декоративного элемента идущего после номера вторичного преимущества */
+
+.secondary-advantages span::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #979797;
+  top: 133px;
+  left: 217px;
+}
+
+/* стилизация первого вторичного преимущства */
+
+.sub-first-point {
+  padding-bottom: 65px;
+  padding-top: 50px;
+  padding-left: 95px;
+  width: 208px;
+  padding-right: 97px;
+}
+
+/* стилизация второго вторичного преимущства */
+
+.sub-second-point {
+  width: 262px;
+  padding-top: 50px;
+  padding-left: 69px;
+  padding-right: 69px;
+  padding-bottom: 65px;
+}
+
+/* стилизация третьего вторичного преимущества */
+
+.sub-third-point {
+  width: 246px;
+  padding-top: 50px;
+  padding-left: 77px;
+  padding-right: 77px;
+  padding-bottom: 65px;
+}
+
+/* стилизация обертки блока "Заинтересовались?..." */
+
+.interest-wrapper {
+  padding-top: 58px;
+  padding-bottom: 54px;
   text-align: center;
-  margin-right: 6px;
 }
 
-.button-catalog.button-brown {
-  width: 142px;
+/* стилизация блока "Заинтересовались?" */
+
+.interest {
+  margin: 0;
+  margin-bottom: 38px;
+  padding-left: 452px;
+  padding-right: 452px;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* стилизация блока "Укажите предполагаемые..." */
+
+.interest-info {
+  padding-left: 370px;
+  padding-right: 370px;
+
+  line-height: 24px;
+  color: #333333;
+}
+
+/* стилизация модального окна */
+
+.modal {
+  width: 568px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* стилизация кнопки показа модального окна */
+
+.button-modal {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* стилизация общих свойств кнопок */
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+/* стилизация цвета коричневых кнопок */
+
+.button-brown {
+  background-color: #766357;
+}
+
+/* стилизация поведения коричневой кнопки при наведении */
+
+.button-brown:hover {
+  background-color: #604e43;
+}
+
+/* стилизация поведения коричневой кнопки при нажатии */
+
+.button-brown:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+/* стилизация коричневой кнопки модального окна */
+
+.button-modal.button-brown {
+  width: 568px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
-.item-info {
-  display: inline-block;
-  width: 110px;
-  margin-right: 4px;
-  font-size: 14px;
-  vertical-align: middle;
+/* стилизация формы на главной странице */
+
+.book-form {
+  background-color: #ffffff;
+  position: absolute;
+  padding: 55px;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
 }
 
-.catalog-item-image {
-  width: 135px;
-  height: 90px;
-  margin-right: 30px;
+/* стилизация лейблов полей ввода */
+
+.book-form label {
+  font-weight: bold;
 }
 
-.item-name {
-  display: block;
-  line-height: 18px;
+/* стилизация ввода для текстовых полей дат */
+
+.book-arrival-pos, .book-departure-pos {
+  padding-left: 10px;
 }
 
-.rating-wrapper {
-  width: 109px;
-  margin-left: auto;
-}
-
-.footer-social li:last-child {
-  margin-right: 0;
-}
+/* стилизация боксов ввода */
 
 .book-date {
   width: 331px;
-  height: 36px;
-
-  margin-left: auto;
+  height: 32px;
+  outline: none;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
+
+/* стилизация поведения при наведении на бокс ввода */
+
+.book-date:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+/* стилизация поведения при фокусе бокса ввода */
+
+.book-date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+/* стилизация внутри поля ввода */
+
+.book-date::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* позиционирование иконки календарика */
+
+.calendar {
+  position: absolute;
+  right: 9px;
+}
+
+/* стилизация поведения иконки календарика при наведении */
+
+.calendar:hover {
+  fill: #000000;
+}
+
+/* стилизация поведения иконки календарика при нажатии */
+
+.calendar:active {
+  fill: #81b3d2;
+}
+
+/* позиционирование иконки календарика для даты въезда */
+
+.calendar-pos-1 {
+  top: 9px;
+}
+
+/* позиционирование иконки календарика для даты выезда */
+
+.calendar-pos-2 {
+  top: 80px;
+}
+
+/* стилизация полей ввода количества человек */
 
 .container-children {
-  width: 36px;
+  width: 32px;
+  height: 32px;
   text-align: center;
+  padding-left: 1px;
 }
+
+/* стилизация кнопки для декоративного элемента "минус" */
 
 .minus {
   position: relative;
@@ -575,6 +819,8 @@ a {
   border: none;
   background-color: #f2f2f2;
 }
+
+/* стилизация декоративного элемента "минус" */
 
 .minus::before {
   position: absolute;
@@ -588,13 +834,19 @@ a {
   margin-left: -5px;
 }
 
+/* стилизация поведения при наведении на декоративный элемент "минус" */
+
 .minus:hover::before {
   background-color: #000000;
 }
 
+/* стилизация поведения при нажатии на декоративный элемент "минус" */
+
 .minus:active::before {
   background-color: #81b3d2;
 }
+
+/* стилизация кнопки для декоративного элемента "плюс" */
 
 .plus {
   position: relative;
@@ -605,6 +857,8 @@ a {
   border: none;
   background-color: #f2f2f2;
 }
+
+/* стилизация декоративного элемента "плюс" */
 
 .plus::before {
   position: absolute;
@@ -618,6 +872,8 @@ a {
   margin-left: -5px;
 }
 
+/* дополнительная стилизация декоративного элемента "плюс" */
+
 .plus::after {
   position: absolute;
   content: "";
@@ -630,310 +886,94 @@ a {
   margin-left: -1px;
 }
 
+/* стилизация поведения при наведении на "плюс" и "минус" */
+
 .plus:hover::before, .plus:hover::after {
   background-color: #000000;
 }
+
+/* стилизация поведения при нажатии на "плюс" и "минус" */
 
 .plus:active::before, .plus:active::after {
   background-color: #81b3d2;
 }
 
-.container-children::placeholder {
+/* стилизация синей кнопки модального окна */
+
+.button-modal.button-blue {
+  width: 458px;
+  padding-top: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 17px;
   text-align: center;
 }
 
+/* сетка оберток дат заезда и выезда */
+
 .paragraph-book {
   position: relative;
-
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.book-arrival-pos::placeholder, .book-departure-pos::placeholder {
-  text-transform: uppercase;
-}
+/* сетка обертки количества взрослых и детей */
 
-.calendar {
-  position: absolute;
-  right: 9px;
-}
-
-.calendar-pos-1 {
-  top: 9px;
-}
-
-.calendar-pos-2 {
-  top: 80px;
-}
-
-.calendar:hover {
-  fill: #000000;
-}
-
-.calendar:active {
-  fill: #81b3d2;
-}
-
-.star-rating {
-  text-align: right;
-
-  margin-bottom: 50px;
-  display: block;
-  height: 17px;
-}
-
-.star-rating-list {
+.people-num-wrapper {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 54px;
 }
 
-.star-rating-list li {
-  height: 17px;
-}
+/* микросетка оберток для взрослых и детей */
 
-.item-rating {
-  display: block;
-  text-align: center;
-}
-
-/* базовая стилизация */
-
-/* общая организация отступов заголовков и абзацев */
-
-.advantages-list p, .advantages-list h3 {
-  margin: 0 auto;
-}
-
-/* стилизация заголовков преимуществ */
-
-.advantages-list h3 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-/* стилизация блоков главных преимущств */
-
-.main-advantages-wrapper {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-/* иконки преимуществ через css */
-
-/* стилизация описаний преимущств */
-
-.advantage-info, .advantages-list span {
-  font-size: 14px;
-  line-height: 12px;
-}
-
-/* стилизация вторичных преимущств */
-
-.secondary-advantages {
-  background-color: #eeeeee;
-}
-
-/* стилизация описаний преимущств кроме главных */
-
-.sub-main-advantages p, .secondary-advantages span, .secondary-advantages p {
-  color: #333333;
-}
-
-/* сетка преимущстве */
-
-.advantages-list {
+.adult-wrapper, .children-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.main-advantages {
-  display: flex;
+/* стилизация лейбла для взрослых */
+
+.adult-label-wrapper {
+  margin-right: 40px;
 }
 
-.main-advantages-wrapper h3 {
-  text-align: center;
-  line-height: 21px;
-  margin-bottom: 32px;
+/* стилизация лейбла для детей */
+
+.children-num-pos {
+  margin-right: 27px;
 }
 
-.advantages-wrapper-1 {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 46px;
-  padding-top: 50px;
-}
+/* стилизация карты */
 
-.advantages-wrapper-2 {
-  padding-left: 48px;
-  padding-right: 49px;
-  padding-bottom: 47px;
-  padding-top: 49px;
-}
-
-.main-advantages-image {
-  line-height: 0;
-}
-
-.sub-main-advantages {
-  display: flex;
-}
-
-.sub-main-advantages li {
-  position: relative;
-}
-
-.advantages-wrapper-1 h3 {
-  padding-left: 79px;
-  padding-right: 79px;
-}
-
-.first-point {
-  padding-left: 73px;
-  padding-right: 75px;
-  padding-bottom: 88px;
-  padding-top: 164px;
-}
-
-.second-point {
-  padding-left: 59px;
-  padding-right: 59px;
-  padding-bottom: 88px;
-  padding-top: 164px;
-}
-
-.third-point {
-  padding-left: 65px;
-  padding-right: 63px;
-  padding-bottom: 88px;
-  padding-top: 164px;
-}
-
-.main-advantages-wrapper span {
+.map {
+  z-index: -1;
   display: block;
-  text-align: center;
-  margin-bottom: 32px;
 }
 
-.advantages-wrapper-2 h3 {
-  padding-left: 77px;
-  padding-right: 76px;
-}
+/* стилизация основного блока внутренней страницы */
 
-.advantage-info {
-  text-align: center;
-  line-height: 21px;
-}
-
-.housing:before {
-  content: " ";
-
-  width: 75px;
-  height: 72px;
-
-  position: absolute;
-
-  background-image: url("../img/icon-1.svg");
-  background-repeat: no-repeat;
-
-  top: 60px;
-  left: 162px;
-}
-
-.food:before {
-  content: " ";
-
-  width: 74px;
-  height: 70px;
-
-  position: absolute;
-
-  background-image: url("../img/icon-2.svg");
-  background-repeat: no-repeat;
-
-  top: 61px;
-  left: 163px;
-}
-
-.souvenirs:before {
-  content: " ";
-
-  width: 64px;
-  height: 76px;
-
-  position: absolute;
-
-  background-image: url("../img/icon-3.svg");
-  background-repeat: no-repeat;
-
-  top: 56px;
-  left: 168px;
-}
-
-.main-advantages:nth-child(3) {
-  flex-direction: row-reverse;
-}
-
-.main-advantage-2 {
-  width: 151px;
-  line-height: 21px;
-}
-
-.sub-main-advantages h3 {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.sub-advantage-1 {
-  width: 252px;
-}
-
-.sub-advantage-2 {
-  width: 284px;
-}
-
-.sub-advantage-3 {
-  width: 273px;
-}
-
-.secondary-advantages h3 {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.secondary-advantages span {
-  display: block;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.secondary-advantage-3 {
-  width: 248px;
-}
-
-.main-navigation {
-  position: relative;
-}
-
-/* стили внутренней страницы */
+/* стилизация формы */
 
 .content-filter {
-  background: url("../img/background-inner.jpg") no-repeat;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 33px;
+  padding-top: 31px;
+  display: flex;
+  background: url(../img/background-inner.jpg) no-repeat;
   background-position-y: -50px;
 }
 
-.content-filter legend {
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
+/* стилизация внешнего отступа первого блока чекбоксов */
+
+.content-filter fieldset:first-child {
+  margin-right: 115px;
 }
 
-.options-list label {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-/* сетка внутренней страницы */
+/* общая стилизация блоков чекбоксов */
 
 .content-filter fieldset {
   border: none;
@@ -941,131 +981,63 @@ a {
   margin: 0;
 }
 
-.content-filter {
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-bottom: 1px;
-  padding-top: 31px;
-  display: flex;
-}
-
-.content-filter fieldset:first-child {
-  margin-right: 115px;
-}
+/* стилизация заголовка блока чекбоксов */
 
 .filter-header {
-  margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 29px;
 }
 
+/* стилизация списка чекбоксов */
+
 .options-list {
-  line-height: 0;
   padding-left: 39px;
 }
 
-.options-list li {
-  padding-bottom: 36px;
-}
-
-.sort-type {
-  display: flex;
-}
-
-.search-result {
-  display: flex;
-  padding-left: 72px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  padding-right: 73px;
-}
-
-p.search-found {
-  font-weight: bold;
-  font-size: 21px;
-
-  margin-right: 49px;
-}
-
-p.search-sort {
-  font-size: 12px;
-  font-weight: bold;
-
-  margin-right: 40px;
-}
-
-.sort-type li {
-  margin-right: 33px;
-}
-
-ul.sort-order {
-  display: flex;
-  margin-left: auto;
-}
-
-.sort-order-up {
-  margin-right: 12px;
-}
-
-.sort-type a {
-  font-size: 12px;
-
-  color: #b2b2b2;
-  border-bottom: dotted 2px #81b3d2;
-}
-
-.sort-selected a {
-  color: #81b3d2;
-  border: none;
-}
-
-.sort-order-selected path {
-  fill: #81b3d2;
-}
-
-.sort-type a:hover {
-  color: #81b3d2;
-}
-
-.sort-type a:active {
-  color: #000000;
-  border: none;
-}
-
-.sort-order path:hover {
-  fill: #231f20;
-}
-
-.sort-order path:active {
-  fill: #81b3d2;
-}
+/* стилизация элементов списка чекбоксов */
 
 .options-list li {
   position: relative;
-  line-height: 10px;
+  margin-bottom: 23px;
 }
+
+/* стилизация лейблов чекбоксов */
+
+.options-list label {
+  color: #ffffff;
+  line-height: 21px;
+}
+
+/* стилизация чекбоксов checked */
+
+.options-list input:checked + label::before {
+  content: "";
+  height: 23px;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 27px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+/* стилизация чекбоксов */
 
 .options-list input + label::before {
   content: "";
-  width: 23px;
   height: 23px;
   position: absolute;
-  top: -6px;
+  top: 0px;
   left: -40px;
   width: 27px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
 
-.options-list input:checked + label::before {
-  content: "";
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  top: -6px;
-  left: -40px;
-  width: 27px;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
+/* стилизация чекбоксов disabled */
 
 .options-list input:disabled + label::before {
   content: "";
@@ -1079,6 +1051,8 @@ ul.sort-order {
   background-repeat: no-repeat;
 }
 
+/* стилизацция чекбоксов disabled checked */
+
 .options-list input:disabled:checked + label::before {
   content: "";
   width: 23px;
@@ -1091,22 +1065,28 @@ ul.sort-order {
   background-repeat: no-repeat;
 }
 
-.options-list input {
-  display: none;
+/* стилизация отступа последнего элемента списка чекбоксов */
+
+.options-list li:last-child {
+  margin-bottom: 0;
 }
 
-/* фильтр */
+/* стилизация фокуса лейблов чекбоксов */
+
+.content-filter input:focus + label {
+  outline: 2px solid blue;
+}
+
+/* стилизация фильтра */
 
 .filter-range {
   margin-left: auto;
   width: 330px;
-
   color: #ffffff;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -1114,12 +1094,9 @@ ul.sort-order {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -1129,67 +1106,64 @@ ul.sort-order {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
+.price-controls .min-price, .price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
+  line-height: 21px;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1197,143 +1171,287 @@ ul.sort-order {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
-.range-toggle-min {
-  left: 0;
-}
-
 .range-toggle-max {
   left: 80%;
 }
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+/* стилизация кнопки фильтра */
 
 .btn-transparent {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
 }
 
+/* стилизация поведения кнопки фильтра при наведении */
+
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
-.date-input-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
+/* стилизация блока результатов поиска  */
 
-.form-header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-.form-input-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.book-arrival-pos {
-  margin-bottom: 30px;
-}
-
-.people-num-wrapper {
-  display: flex;
-  margin-bottom: 54px;
-}
-
-.adult-wrapper .adult-label-wrapper {
-  margin-right: 38px;
-}
-
-.children-wrapper .children-num-pos {
-  margin-right: 27px;
-}
-
-.container-children {
-  padding: 0;
-}
-
-.adult-wrapper, .children-wrapper {
+.search-result {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.book-arrival-pos, .book-departure-pos {
-  padding-left: 13px;
-}
-
-.adult-wrapper {
-  margin-right: 53px;
-}
-
-.adult-label-wrapper {
-  margin-right: 38px;
-}
-
-.children-num-pos {
-  margin-right: 27px;
-}
-
-.container-advantages {
-  padding-left: 356px;
-  padding-right: 356px;
-}
-
-.sub-first-point {
-  padding-bottom: 65px;
-  padding-top: 50px;
-  padding-left: 95px;
-  width: 208px;
-  padding-right: 97px;
-}
-
-.sub-first-point h3 {
-  padding-left: 46px;
-  padding-right: 46px;
-}
-
-.sub-second-point {
-  width: 262px;
-  padding-top: 50px;
-  padding-left: 69px;
-  padding-right: 69px;
-  padding-bottom: 65px;
-}
-
-.sub-second-point h3 {
-  padding-left: 82px;
-  padding-right: 82px;
-}
-
-.sub-third-point {
-  width: 246px;
-  padding-top: 50px;
-  padding-left: 77px;
-  padding-right: 77px;
-  padding-bottom: 65px;
-}
-
-.sub-third-point h3 {
-  padding-left: 73px;
+  padding-left: 72px;
+  padding-top: 35px;
+  padding-bottom: 36px;
   padding-right: 73px;
+}
+
+/* стилизация блока количества найденных опций "Найдено:"  */
+
+.search-found {
+  font-weight: bold;
+  font-size: 21px;
+  margin-right: 49px;
+}
+
+/* стилизация блока "Сортировка"  */
+
+.search-sort {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+/* стилизация сетки списка выбора сортировки  */
+
+.sort-type {
+  display: flex;
+}
+
+/* стилизация внешних отступов для элементов списка сортировки */
+
+.sort-type li {
+  margin-right: 33px;
+}
+
+/* стилизация типов сортировки */
+
+.sort-type a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  border-bottom: dotted 2px #81b3d2;
+}
+
+/* стилизация поведения при наведении на тип сортировки  */
+
+.sort-type a:hover {
+  color: #81b3d2;
+}
+
+/* стилизация поведения при нажатии на тип сортировки  */
+
+.sort-type a:active {
+  color: #000000;
+  border: none;
+}
+
+/* стилизация выбранного типа сортировки  */
+
+.sort-selected a {
+  color: #81b3d2;
+  border: none;
+}
+
+/* стилизация списка выбора порядка сортировки */
+
+.sort-order {
+  display: flex;
+  margin-left: auto;
+}
+
+/* стилизация внешнего отступа первого элемента списка выбора типа сортировки  */
+
+.sort-order-up {
+  margin-right: 12px;
+}
+
+/* стилизация поведения при наведении на тип порядка сортировки */
+
+.sort-order path:hover {
+  fill: #231f20;
+}
+
+/* стилизация поведения при нажатии на тип порядка сортировки */
+
+.sort-order path:active {
+  fill: #81b3d2;
+}
+
+/* стилизация выбранного типа порядка сортировки */
+
+.sort-order-selected path {
+  fill: #81b3d2;
+}
+
+/* стилизация линий, разграничивающих найденные элементы */
+
+.catalog-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* стилизация линии последнего найденного элемента */
+
+.catalog-item:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* общая стилизация карточки элемента */
+
+.catalog-item-info {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 72px;
+  padding-bottom: 30px;
+  padding-right: 73px;
+  align-items: center;
+}
+
+/* стилизация обертки картинки элемента */
+
+.catalog-item-image {
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+/* стилизация блока картинки элемента */
+
+.item-image {
+  display: block;
+  height: 90px;
+}
+
+/* стилизация обертки блока информации об элементе */
+
+.item-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  width: 258px;
+}
+
+/* стилизация заголовка блока информации об элементе */
+
+.item-info-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* стилизация названия элемента */
+
+.item-name {
+  display: block;
+  line-height: 18px;
+  font-size: 21px;
+}
+
+/* стилизация поведения при наведении на название элемента  */
+
+.item-name:hover {
+  color: #81b3d2;
+}
+
+/* стилизация поведения при нажатии на название элемента  */
+
+.item-name:active {
+  color: #cacaca;
+}
+
+/* стилизация контейнера блоков с типом и стоимостью элемента */
+
+.item-info-container {
+  font-size: 0;
+}
+
+/* стилизация типа элемента и стоимости элемента */
+
+.item-info {
+  display: inline-block;
+  width: 110px;
+  margin-right: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  color: #333333;
+}
+
+/* стилизация обертки для кнопок карточек элементов */
+
+.catalog-button-wrapper {
+  display: flex;
+}
+
+/* стилизация синих кнопок карточек элементов */
+
+.button-catalog.button-blue {
+  width: 110px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+/* общая стилизация кнопок карточек элементов */
+
+.button-catalog {
+  line-height: 21px;
+}
+
+/* стилизация коричневых кнопок карточек элементов */
+
+.button-catalog.button-brown {
+  width: 142px;
+  text-align: center;
+}
+
+/* стилизация обертки блока рейтинга элемента */
+
+.rating-wrapper {
+  width: 109px;
+  margin-left: auto;
+}
+
+/* стилизация блока звездочек рейтинга элемента  */
+
+.star-rating {
+  text-align: right;
+  margin-bottom: 50px;
+  display: block;
+  height: 17px;
+}
+
+/* стилизация блока "Рейтинг" */
+
+.item-rating {
+  display: block;
+  text-align: center;
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
 }
