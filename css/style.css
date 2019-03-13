@@ -195,6 +195,7 @@ a {
 
 .social-button {
   display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 48px;
 }
@@ -622,11 +623,32 @@ a {
 /* стилизация третьего вторичного преимущества */
 
 .sub-third-point {
-  width: 246px;
+  width: 260px;
   padding-top: 50px;
-  padding-left: 77px;
-  padding-right: 77px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 65px;
+}
+
+/* стилизация отступов заголовка вторичных преимуществ 1 элемента */
+
+.sub-first-point h3 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* стилизация отступов заголовка вторичных преимуществ 2 элемента */
+
+.sub-second-point h3 {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+/* стилизация отступов заголовка вторичных преимуществ 3 элемента */
+
+.sub-third-point h3 {
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 /* стилизация обертки блока "Заинтересовались?..." */
@@ -803,7 +825,6 @@ a {
 
 .container-children {
   width: 32px;
-  height: 32px;
   text-align: center;
   padding-left: 1px;
 }
