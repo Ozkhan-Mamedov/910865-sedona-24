@@ -34,38 +34,42 @@
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="content-filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend class="filter-header">Инфраструктура:</legend>
-          <ul class="list-style options-list">
-            <li>
-              <input class="visually-hidden option" id="filter-pool" type="checkbox" name="pool" checked autocomplete="off">
-              <label for="filter-pool">Бассейн</label>
-            </li>
-            <li>
-              <input class="visually-hidden option" id="filter-parking" type="checkbox" name="parking" autocomplete="off">
-              <label for="filter-parking">Парковка</label>
-            </li>
-            <li>
-              <input class="visually-hidden option" id="filter-wi-fi" type="checkbox" name="wi-fi" autocomplete="off">
-              <label for="filter-wi-fi">Wi-Fi</label>
-            </li>
-          </ul>
+          <div class="checkbox-filter-wrapper">
+            <legend class="filter-header">Инфраструктура:</legend>
+            <ul class="list-style options-list">
+              <li>
+                <input class="visually-hidden option" id="filter-pool" type="checkbox" name="pool" checked autocomplete="off">
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input class="visually-hidden option" id="filter-parking" type="checkbox" name="parking" autocomplete="off">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input class="visually-hidden option" id="filter-wi-fi" type="checkbox" name="wi-fi" autocomplete="off">
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset>
-          <legend class="filter-header">Тип жилья:</legend>
-          <ul class="list-style options-list">
-            <li>
-              <input class="visually-hidden option" id="filter-hotel" type="checkbox" name="hotel" checked autocomplete="off">
-              <label for="filter-hotel">Гостиница</label>
-            </li>
-            <li>
-              <input class="visually-hidden option" id="filter-motel" type="checkbox" name="motel" checked autocomplete="off">
-              <label for="filter-motel">Мотель</label>
-            </li>
-            <li>
-              <input class="visually-hidden option" id="filter-apartments" type="checkbox" name="apartments" checked autocomplete="off">
-              <label for="filter-apartments">Апартаменты</label>
-            </li>
-          </ul>
+          <div class="checkbox-filter-wrapper">
+            <legend class="filter-header">Тип жилья:</legend>
+            <ul class="list-style options-list">
+              <li>
+                <input class="visually-hidden option" id="filter-hotel" type="checkbox" name="hotel" checked autocomplete="off">
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input class="visually-hidden option" id="filter-motel" type="checkbox" name="motel" checked autocomplete="off">
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input class="visually-hidden option" id="filter-apartments" type="checkbox" name="apartments" checked autocomplete="off">
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <div class="filter-range">
           <div class="filter-range-title">Стоимость в сутки (р):</div>

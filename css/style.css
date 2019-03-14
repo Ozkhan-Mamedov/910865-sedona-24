@@ -993,11 +993,10 @@ a {
 
 /* стилизация блока чекбоксов */
 
-.content-filter fieldset {
-  min-width: 139px;
-  display: table-cell;
-  overflow: scroll;
-  width: 139px;
+.checkbox-filter-wrapper {
+  /*overflow-wrap: break-word;*/
+  overflow: auto;
+  width: 135px;
 }
 
 /* стилизация внешнего отступа первого блока чекбоксов */
