@@ -114,9 +114,9 @@ a {
   width: 25%;
 }
 
-/* поведение элементов списка навигации при наведении */
+/* поведение элементов списка навигации при наведении и фокусе */
 
-.site-navigation a:hover {
+.site-navigation a:hover, .site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -206,9 +206,9 @@ a {
   background-color: #81b3d2;
 }
 
-/* поведение синих кнопок при наведении */
+/* поведение синих кнопок при наведении и фокусе */
 
-.button-blue:hover {
+.button-blue:hover, .button-blue:focus {
   background-color: #669ec0;
 }
 
@@ -289,9 +289,9 @@ a {
   line-height: 0;
 }
 
-/* поведение логотипа Академии при наведении */
+/* поведение логотипа Академии при наведении и фокусе */
 
-.copyright-logo-container:hover g {
+.copyright-logo-container:hover g, .copyright-logo-container:focus g {
   fill: #81b3d2;
 }
 
@@ -482,7 +482,7 @@ a {
   position: absolute;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  top: 60px;
+  top: 54px;
   left: 162px;
 }
 
@@ -712,9 +712,9 @@ a {
   background-color: #766357;
 }
 
-/* стилизация поведения коричневой кнопки при наведении */
+/* стилизация поведения коричневой кнопки при наведении и фокусе */
 
-.button-brown:hover {
+.button-brown:hover, .button-brown:focus {
   background-color: #604e43;
 }
 
@@ -855,9 +855,9 @@ a {
   margin-left: -5px;
 }
 
-/* стилизация поведения при наведении на декоративный элемент "минус" */
+/* стилизация поведения при наведении и фокусе на декоративный элемент "минус" */
 
-.minus:hover::before {
+.minus:hover::before, .minus:focus::before {
   background-color: #000000;
 }
 
@@ -907,9 +907,9 @@ a {
   margin-left: -1px;
 }
 
-/* стилизация поведения при наведении на "плюс" и "минус" */
+/* стилизация поведения при наведении и фокусе на "плюс" и "минус" */
 
-.plus:hover::before, .plus:hover::after {
+.plus:hover::before, .plus:hover::after, .plus:focus::before, .plus:focus::after {
   background-color: #000000;
 }
 
@@ -1224,9 +1224,9 @@ a {
   cursor: pointer;
 }
 
-/* стилизация поведения кнопки фильтра при наведении */
+/* стилизация поведения кнопки фильтра при наведении и фокусе */
 
-.btn-transparent:hover {
+.btn-transparent:hover, .btn-transparent:focus {
   color: #000000;
   background: #ffffff;
 }
@@ -1280,9 +1280,9 @@ a {
   border-bottom: dotted 2px #81b3d2;
 }
 
-/* стилизация поведения при наведении на тип сортировки  */
+/* стилизация поведения при наведении и фокусе на тип сортировки  */
 
-.sort-type a:hover {
+.sort-type a:hover, .sort-type a:focus {
   color: #81b3d2;
 }
 
@@ -1313,9 +1313,9 @@ a {
   margin-right: 12px;
 }
 
-/* стилизация поведения при наведении на тип порядка сортировки */
+/* стилизация поведения при наведении и фокусе на тип порядка сортировки */
 
-.sort-order path:hover {
+.sort-order a:hover path, .sort-order a:focus path {
   fill: #231f20;
 }
 
@@ -1394,9 +1394,9 @@ a {
   font-size: 21px;
 }
 
-/* стилизация поведения при наведении на название элемента  */
+/* стилизация поведения при наведении и фокусе на название элемента  */
 
-.item-name:hover {
+.item-name:hover, .item-name:focus {
   color: #81b3d2;
 }
 
