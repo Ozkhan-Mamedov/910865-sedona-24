@@ -991,6 +991,15 @@ a {
   background-position-y: -50px;
 }
 
+/* стилизация блока чекбоксов */
+
+.content-filter fieldset {
+  min-width: 139px;
+  display: table-cell;
+  overflow: scroll;
+  width: 139px;
+}
+
 /* стилизация внешнего отступа первого блока чекбоксов */
 
 .content-filter fieldset:first-child {
