@@ -1018,7 +1018,7 @@ a {
 /* стилизация списка чекбоксов */
 
 .options-list {
-  padding-left: 39px;
+  /*padding-left: 39px;*/
 }
 
 /* стилизация элементов списка чекбоксов */
@@ -1033,30 +1033,32 @@ a {
 .options-list label {
   color: #ffffff;
   line-height: 21px;
+  /*padding-left: 39px;*/
+  margin-left: 39px;
 }
 
 /* стилизация чекбоксов checked */
 
 .options-list input:checked + label::before {
-  content: "";
+  /*content: "";
   height: 23px;
   position: absolute;
   top: 0px;
   left: -40px;
-  width: 27px;
+  width: 27px;*/
   background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 
 /* стилизация чекбоксов */
 
 .options-list input + label::before {
   content: "";
-  height: 23px;
+  height: 24px;
   position: absolute;
   top: 0px;
-  left: -40px;
-  width: 27px;
+  left: 0px;
+  width: 26px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
@@ -1064,15 +1066,15 @@ a {
 /* стилизация чекбоксов disabled */
 
 .options-list input:disabled + label::before {
-  content: "";
+  /*content: "";
   width: 23px;
   height: 23px;
   position: absolute;
   top: -6px;
   left: -40px;
-  width: 27px;
+  width: 27px;*/
   background-image: url(../img/checkbox-disabled-off.svg);
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 
 /* стилизацция чекбоксов disabled checked */
@@ -1308,6 +1310,14 @@ a {
 .sort-order {
   display: flex;
   margin-left: auto;
+  align-items: center;
+}
+
+/* стилизация элементов списка выбора порядка сортировки */
+
+.sort-order li {
+  font-size: 0;
+  line-height: 0;
 }
 
 /* стилизация внешнего отступа первого элемента списка выбора типа сортировки  */
@@ -1360,8 +1370,6 @@ a {
 /* стилизация обертки картинки элемента */
 
 .catalog-item-image {
-  width: 135px;
-  height: 90px;
   margin-right: 30px;
 }
 
@@ -1369,7 +1377,7 @@ a {
 
 .item-image {
   display: block;
-  height: 90px;
+  line-height: 0;
 }
 
 /* стилизация обертки блока информации об элементе */
@@ -1385,8 +1393,7 @@ a {
 /* стилизация заголовка блока информации об элементе */
 
 .item-info-wrapper h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* стилизация названия элемента */
