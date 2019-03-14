@@ -1249,7 +1249,7 @@ a {
 
 .search-result {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   padding-left: 72px;
   padding-top: 35px;
   padding-bottom: 36px;
@@ -1261,7 +1261,8 @@ a {
 .search-found {
   font-weight: bold;
   font-size: 21px;
-  margin-right: 49px;
+  width: 135px;
+  /*margin-right: 49px;*/
 }
 
 /* стилизация блока "Сортировка"  */
@@ -1271,6 +1272,20 @@ a {
   line-height: 18px;
   font-weight: bold;
   margin-right: 40px;
+}
+
+/* */
+
+.search-found-wrapper {
+  margin-right: 30px;
+}
+
+/* */
+
+.search-sort-wrapper {
+  display: flex;
+  align-items: center;
+  width: 891px;
 }
 
 /* стилизация сетки списка выбора сортировки  */
