@@ -1048,7 +1048,7 @@ a {
 
 /* стилизация чекбоксов checked */
 
-.options-list input:checked + label::before {
+.option:checked + label::before {
   /*content: "";
   height: 23px;
   position: absolute;
@@ -1061,7 +1061,7 @@ a {
 
 /* стилизация чекбоксов */
 
-.options-list input + label::before {
+.option + label::before {
   content: "";
   height: 24px;
   position: absolute;
@@ -1074,7 +1074,7 @@ a {
 
 /* стилизация чекбоксов disabled */
 
-.options-list input:disabled + label::before {
+.option:disabled + label::before {
   /*content: "";
   width: 23px;
   height: 23px;
@@ -1088,7 +1088,7 @@ a {
 
 /* стилизацция чекбоксов disabled checked */
 
-.options-list input:disabled:checked + label::before {
+.option:disabled:checked + label::before {
   content: "";
   width: 23px;
   height: 23px;
@@ -1108,8 +1108,8 @@ a {
 
 /* стилизация фокуса лейблов чекбоксов */
 
-.content-filter input:focus + label {
-  outline: 2px solid blue;
+.option:focus + label {
+  outline: rgb(125, 173, 217) auto 5px
 }
 
 /* стилизация фильтра */
@@ -1262,6 +1262,7 @@ a {
   font-weight: bold;
   font-size: 21px;
   width: 135px;
+  margin-right: 30px;
   /*margin-right: 49px;*/
 }
 
@@ -1274,13 +1275,7 @@ a {
   margin-right: 40px;
 }
 
-/* */
-
-.search-found-wrapper {
-  margin-right: 30px;
-}
-
-/* */
+/* стилизация сетки блока типа сортировки */
 
 .search-sort-wrapper {
   display: flex;
@@ -1292,6 +1287,7 @@ a {
 
 .sort-type {
   display: flex;
+  width: 240px;
 }
 
 /* стилизация внешних отступов для элементов списка сортировки */
@@ -1352,7 +1348,7 @@ a {
 
 /* стилизация поведения при наведении и фокусе на тип порядка сортировки */
 
-.sort-order a:hover path, .sort-order a:focus path {
+.order-button:hover path, .order-button:focus path {
   fill: #231f20;
 }
 
