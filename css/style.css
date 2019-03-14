@@ -792,20 +792,23 @@ a {
 
 /* позиционирование иконки календарика */
 
-.calendar {
+.calendar-button {
+  border: none;
+  background-color: transparent;
   position: absolute;
-  right: 9px;
+  right: 2px;
+  top: 7px;
 }
 
 /* стилизация поведения иконки календарика при наведении */
 
-.calendar:hover {
+.calendar-button:hover .calendar, .calendar-button:focus .calendar {
   fill: #000000;
 }
 
 /* стилизация поведения иконки календарика при нажатии */
 
-.calendar:active {
+.calendar-button:active .calendar {
   fill: #81b3d2;
 }
 
