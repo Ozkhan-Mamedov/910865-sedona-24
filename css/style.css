@@ -801,18 +801,34 @@ a {
 .modal-show {
   display: block;
 
-  animation: falling-out 0.8s;
+  -webkit-animation: falling-out 0.8s;
+
+          animation: falling-out 0.8s;
 }
 
 /* анимация формы */
 
-@keyframes falling-out {
+@-webkit-keyframes falling-out {
   0% {
-    transform: translateY(-86px);
+    -webkit-transform: translateY(-86px);
+            transform: translateY(-86px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes falling-out {
+  0% {
+    -webkit-transform: translateY(-86px);
+            transform: translateY(-86px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
