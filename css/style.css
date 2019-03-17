@@ -64,7 +64,8 @@ a {
   margin: 0 auto;
 
   background-color: #ffffff;
-  box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* стилизация хедера */
@@ -90,8 +91,11 @@ a {
 /* стилизация списка навигации */
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 15px;
@@ -147,10 +151,17 @@ a {
 /* общая стилизация футера */
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 36px;
   padding-top: 37px;
 }
@@ -185,9 +196,14 @@ a {
 /* стилизация списка социальных сетей */
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   width: 400px;
   margin-bottom: -6px;
@@ -290,11 +306,18 @@ a {
 /* стилизация блока авторства */
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* позиционирование блока логотипа Академии */
@@ -364,13 +387,18 @@ a {
 /* сетка списка преимуществ */
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* сетка главных преимуществ */
 
 .main-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -465,12 +493,17 @@ a {
 /* поворот главной оси для второго главного преимущества */
 
 .main-advantages:nth-child(3) {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 /* сетка внутреннего списка первого главного преимущества */
 
 .sub-main-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -741,7 +774,8 @@ a {
   padding: 55px;
 
   background-color: #ffffff;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* стилизация лейблов полей ввода */
@@ -788,6 +822,21 @@ a {
 }
 
 /* стилизация внутри поля ввода */
+
+.book-date::-webkit-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.book-date:-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.book-date::-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
 
 .book-date::placeholder {
   color: #000000;
@@ -964,17 +1013,29 @@ a {
 .paragraph-book {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
 /* сетка обертки количества взрослых и детей */
 
 .people-num-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 54px;
 }
 
@@ -982,8 +1043,12 @@ a {
 
 .adult-wrapper,
 .children-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* стилизация лейбла для взрослых */
@@ -1015,6 +1080,8 @@ a {
   padding-right: 72px;
   padding-bottom: 28px;
   padding-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   background: url(../img/background-inner.jpg) no-repeat;
@@ -1155,7 +1222,11 @@ a {
 
   background: #ffffff;
 
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+      -ms-transform: translate(-50%, -50%);
+
+          transform: translate(-50%, -50%);
 
   content: "";
 }
@@ -1225,7 +1296,8 @@ a {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 
   cursor: pointer;
 }
@@ -1244,7 +1316,8 @@ a {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 
   cursor: pointer;
 }
@@ -1285,6 +1358,8 @@ a {
 /* стилизация блока результатов поиска  */
 
 .search-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 72px;
   padding-top: 32px;
@@ -1315,14 +1390,20 @@ a {
 /* стилизация сетки блока типа сортировки */
 
 .search-sort-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 891px;
 }
 
 /* стилизация сетки списка выбора сортировки  */
 
 .sort-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 240px;
 }
@@ -1369,9 +1450,13 @@ a {
 /* стилизация списка выбора порядка сортировки */
 
 .sort-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* стилизация элементов списка выбора порядка сортировки */
@@ -1421,12 +1506,16 @@ a {
 /* общая стилизация карточки элемента */
 
 .catalog-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
   padding-left: 72px;
   padding-bottom: 30px;
   padding-right: 73px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* стилизация обертки картинки элемента */
@@ -1446,8 +1535,13 @@ a {
 /* стилизация обертки блока информации об элементе */
 
 .item-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 90px;
   width: 258px;
 }
@@ -1507,6 +1601,8 @@ a {
 /* стилизация обертки для кнопок карточек элементов */
 
 .catalog-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
