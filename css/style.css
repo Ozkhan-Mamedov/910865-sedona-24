@@ -120,7 +120,7 @@ a {
   text-align: right;
 }
 
-/* */
+/* стилизация отступа правой части навигации */
 
 .site-navigation li:nth-child(4n+3) {
   margin-left: 83px;
@@ -346,13 +346,30 @@ a {
 /* стилизация фонового изображения */
 
 .main-background {
+  position: relative;
+
   height: 508px;
 
   background: url("../img/welcome.svg") no-repeat,
-              url("../img/polygon.svg") no-repeat,
               url("../img/background.jpg") no-repeat;
-  background-size: 459px 353px, contain, cover;
-  background-position: center+76px, center 452px, center -56px;
+  background-size: 459px 353px, cover;
+  background-position: center+76px, center -56px;
+}
+
+/* стилизация маски фонового изображения */
+
+.main-background:before {
+  position: absolute;
+  top: 452px;
+  left: 0px;
+
+  width: 1201px;
+  height: 59px;
+
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+
+  content: "";
 }
 
 /* стилизация обертки "Седона - небольшой..." */
@@ -525,7 +542,7 @@ a {
 
 /* декоративное изображение жилья */
 
-.housing:before {
+.first-point:before {
   position: absolute;
   top: 60px;
   left: 162px;
@@ -533,7 +550,7 @@ a {
   width: 75px;
   height: 72px;
 
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
 
   content: "";
@@ -548,7 +565,7 @@ a {
 
 /* декоративное изображение еды */
 
-.food:before {
+.second-point:before {
   position: absolute;
   top: 61px;
   left: 163px;
@@ -556,7 +573,7 @@ a {
   width: 74px;
   height: 70px;
 
-  background-image: url(../img/icon-2.svg);
+  background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
 
   content: "";
@@ -571,7 +588,7 @@ a {
 
 /* декоративное изображение сувениров */
 
-.souvenirs:before {
+.third-point:before {
   position: absolute;
   top: 56px;
   left: 168px;
@@ -579,7 +596,7 @@ a {
   width: 64px;
   height: 76px;
 
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
 
   content: "";
@@ -771,11 +788,32 @@ a {
 .book-form {
   position: absolute;
 
+  display: none;
   padding: 55px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* свойство, отвечающее за показ формы */
+
+.modal-show {
+  display: block;
+
+  animation: falling-out 0.8s;
+}
+
+/* анимация формы */
+
+@keyframes falling-out {
+  0% {
+    transform: translateY(-86px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* стилизация лейблов полей ввода */
@@ -1140,7 +1178,7 @@ a {
 /* стилизация чекбоксов checked */
 
 .option:checked + label::before {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
 }
 
 /* стилизация чекбоксов */
@@ -1153,7 +1191,7 @@ a {
   width: 26px;
   height: 24px;
 
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 
   content: "";
@@ -1162,13 +1200,13 @@ a {
 /* стилизация чекбоксов disabled */
 
 .option:disabled + label::before {
-  background-image: url(../img/checkbox-disabled-off.svg);
+  background-image: url("../img/checkbox-disabled-off.svg");
 }
 
 /* стилизацция чекбоксов disabled checked */
 
 .option:disabled:checked + label::before {
-  background-image: url(../img/checkbox-disabled-on.svg);
+  background-image: url("../img/checkbox-disabled-on.svg");
 }
 
 /* стилизация отступа последнего элемента списка чекбоксов */

@@ -50,15 +50,15 @@
         <li>
           <ul class="list-style sub-main-advantages">
             <li class="first-point">
-              <h3 class="housing">Жильё</h3>
+              <h3>Жильё</h3>
               <p class="sub-advantage-1 advantage-info paragraph-style-reset">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
             </li>
             <li class="second-point">
-              <h3 class="food">Еда</h3>
+              <h3>Еда</h3>
               <p class="sub-advantage-2 advantage-info paragraph-style-reset">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="third-point">
-              <h3 class="souvenirs">Сувениры</h3>
+              <h3>Сувениры</h3>
               <p class="sub-advantage-3 advantage-info paragraph-style-reset">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
             </li>
           </ul>
@@ -179,5 +179,22 @@
         </a>
       </p>
     </footer>
+    <script>
+      var link = document.querySelector(".button-modal.button-brown");
+
+      var popup = document.querySelector(".book-form");
+
+      var focus = popup.querySelector("[name=arrival-date]");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+        }else {
+          popup.classList.add("modal-show");
+        }
+        focus.focus();
+      });
+    </script>
   </body>
 </html>
