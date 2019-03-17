@@ -1,4 +1,6 @@
 body {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -10,8 +12,6 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-
-  position: relative;
 }
 
 /* у ссылок убраны подчеркивания */
@@ -36,10 +36,10 @@ a {
 /* обнуление отступов у списков и отмена декоративного выделения элементов списка */
 
 .list-style {
-  list-style: none;
-
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 /* прячем блоки с текстом, доступные для читалок */
@@ -64,8 +64,7 @@ a {
   margin: 0 auto;
 
   background-color: #ffffff;
-
-  box-shadow: 0 11px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 11px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* стилизация хедера */
@@ -81,42 +80,46 @@ a {
   position: absolute;
   left: 50%;
   top: -1px;
+  z-index: 1;
+
   margin-left: -70px;
   width: 140px;
   height: 72px;
-  z-index: 1;
 }
 
 /* стилизация списка навигации */
 
 .site-navigation {
-  font-weight: bold;
-
   display: flex;
   flex-wrap: wrap;
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  font-weight: bold;
 }
 
 /* стилизация элементов списка слева от логотипа */
 
 .site-navigation-item-left {
-  text-align: left;
   width: 25%;
+
+  text-align: left;
 }
 
 /* стилизация элементов списка справа от логотипа */
 
 .site-navigation-item-right {
-  text-align: right;
   width: 25%;
+
+  text-align: right;
 }
 
 /* поведение элементов списка навигации при наведении и фокусе */
 
-.site-navigation a:hover, .site-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -128,7 +131,8 @@ a {
 
 /* цвет выбранного элемента списка навигации */
 
-.site-navigation-current a, .site-navigation-current a:hover {
+.site-navigation-current a,
+.site-navigation-current a:hover {
   color: #766357;
 }
 
@@ -141,7 +145,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
   padding-bottom: 33px;
   padding-top: 33px;
 }
@@ -153,7 +156,6 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-
   z-index: 1;
 
   background-color: rgba(254, 254, 254, 0.9);
@@ -170,6 +172,7 @@ a {
 
 .social-hashtag-wrapper {
   width: 400px;
+
   text-align: center;
 }
 
@@ -178,9 +181,11 @@ a {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  line-height: 0;
-  width: 400px;
   justify-content: center;
+
+  width: 400px;
+
+  line-height: 0;
 }
 
 /* стилизация элементов списка социальных сетей */
@@ -208,7 +213,8 @@ a {
 
 /* поведение синих кнопок при наведении и фокусе */
 
-.button-blue:hover, .button-blue:focus {
+.button-blue:hover,
+.button-blue:focus {
   background-color: #669ec0;
 }
 
@@ -223,51 +229,53 @@ a {
 /* кнопка "Твиттер" */
 
 .social-twitter::before {
-  content: " ";
-
-  width:46px;
-  height: 48px;
-
   position: absolute;
+
+  width: 46px;
+  height: 48px;
 
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  content: "";
 }
 
 /* кнопка "Facebook" */
 
 .social-facebook::before {
-  content: " ";
-
-  width:46px;
-  height: 48px;
-
   position: absolute;
+
+  width: 46px;
+  height: 48px;
 
   background-image: url("../img/facebook.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  content: "";
 }
 
 /* кнопка "Youtube" */
 
 .social-youtube::before {
-  content: " ";
-
-  width:46px;
-  height: 48px;
-
   position: absolute;
+
+  width: 46px;
+  height: 48px;
 
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  content: "";
 }
 
 /* поведение кнопок социальных сетей при нажатии */
 
-.social-twitter:active::before, .social-facebook:active::before, .social-youtube:active::before {
+.social-twitter:active::before,
+.social-facebook:active::before,
+.social-youtube:active::before {
   opacity: 0.3;
 }
 
@@ -276,7 +284,6 @@ a {
 .footer-copyright {
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   width: 400px;
   justify-content: center;
@@ -286,12 +293,14 @@ a {
 
 .copyright-logo-container {
   margin-left: 8px;
+
   line-height: 0;
 }
 
 /* поведение логотипа Академии при наведении и фокусе */
 
-.copyright-logo-container:hover g, .copyright-logo-container:focus g {
+.copyright-logo-container:hover g,
+.copyright-logo-container:focus g {
   fill: #81b3d2;
 }
 
@@ -338,10 +347,10 @@ a {
 /* стилизация блока "Рассмотрим 5 причин..." */
 
 .container-advantages {
-  color: #333333;
-
   padding-left: 200px;
   padding-right: 200px;
+
+  color: #333333;
 }
 
 /* сетка списка преимуществ */
@@ -360,12 +369,14 @@ a {
 /* стилизация оберток главных преимуществ */
 
 .main-advantages-wrapper {
-  color: #ffffff;
-  background-color: #81b3d2;
   padding-left: 47px;
   padding-right: 47px;
   padding-bottom: 56px;
   padding-top: 48px;
+
+  color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 /* стилизация заголовков двух главных преимуществ */
@@ -378,11 +389,11 @@ a {
 /* стилизация заголовков преимуществ */
 
 .advantages-list h3 {
-  font-size: 21px;
-  line-height: 21px;
-
   margin: 0;
   margin-bottom: 23px;
+
+  font-size: 21px;
+  line-height: 21px;
   text-align: center;
 }
 
@@ -390,37 +401,44 @@ a {
 
 .advantages-list span {
   position: relative;
-  line-height: 21px;
+
+  display: block;
   margin-bottom: 21px;
   padding-left: 52px;
   padding-right: 52px;
 
-  display: block;
+  line-height: 21px;
   text-align: center;
 }
 
 /* стилизация декоративного элемента идущего до номера главного преимущества */
 
 .main-advantages span::before {
-  content: "";
   position: absolute;
-  width: 9px;
-  height: 2px;
-  background-color: #c2d9e8;
   top: 10px;
   left: 126px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #c2d9e8;
+
+  content: "";
 }
 
 /* стилизация декоративного элемента идущего после номера главного преимущества */
 
 .main-advantages span::after {
-  content: "";
   position: absolute;
-  width: 9px;
-  height: 2px;
-  background-color: #c2d9e8;
   top: 10px;
   left: 171px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #c2d9e8;
+
+  content: "";
 }
 
 /* стилизация информации преимущств */
@@ -452,6 +470,7 @@ a {
 
 .sub-main-advantages li {
   position: relative;
+
   padding-bottom: 82px;
   padding-top: 162px;
 }
@@ -466,14 +485,17 @@ a {
 /* декоративное изображение жилья */
 
 .housing:before {
-  content: " ";
-  width: 75px;
-  height: 72px;
   position: absolute;
-  background-image: url(../img/icon-1.svg);
-  background-repeat: no-repeat;
   top: 60px;
   left: 162px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+
+  content: "";
 }
 
 /* стилизация первого элемента подсписка */
@@ -486,14 +508,17 @@ a {
 /* декоративное изображение еды */
 
 .food:before {
-  content: " ";
-  width: 74px;
-  height: 70px;
   position: absolute;
-  background-image: url(../img/icon-2.svg);
-  background-repeat: no-repeat;
   top: 61px;
   left: 163px;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+
+  content: "";
 }
 
 /* стилизация второго элемента подсписка */
@@ -506,14 +531,17 @@ a {
 /* декоративное изображение сувениров */
 
 .souvenirs:before {
-  content: " ";
-  width: 64px;
-  height: 76px;
   position: absolute;
-  background-image: url(../img/icon-3.svg);
-  background-repeat: no-repeat;
   top: 56px;
   left: 168px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+
+  content: "";
 }
 
 /* стилизация третьего элемента подсписка */
@@ -544,17 +572,21 @@ a {
 /* стилизация фона вторичных преимуществ */
 
 .secondary-advantages {
-  background-color: #eeeeee;
   padding-bottom: 59px;
   padding-top: 48px;
   padding-left: 60px;
-  width: 280px;
   padding-right: 60px;
+  width: 280px;
+
+  background-color: #eeeeee;
 }
 
 /* стилизация цвета информации о преимуществах */
 
-.secondary-advantage-1, .secondary-advantage-2, .secondary-advantage-3, .sub-advantage-1, .sub-advantage-2, .sub-advantage-3 {
+.secondary-advantages p,
+.sub-advantage-1,
+.sub-advantage-2,
+.sub-advantage-3 {
   color: #333333;
 }
 
@@ -567,25 +599,31 @@ a {
 /* стилизация декоративного элемента идущего до номера вторичного преимущества */
 
 .secondary-advantages span::before {
-  content: "";
   position: absolute;
-  width: 9px;
-  height: 2px;
-  background-color: #979797;
   top: 10px;
   left: 115px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #979797;
+
+  content: "";
 }
 
 /* стилизация декоративного элемента идущего после номера вторичного преимущества */
 
 .secondary-advantages span::after {
-  content: "";
   position: absolute;
-  width: 9px;
-  height: 2px;
-  background-color: #979797;
   top: 10px;
   left: 155px;
+
+  width: 9px;
+  height: 2px;
+
+  background-color: #979797;
+
+  content: "";
 }
 
 /* стилизация отступов заголовков вторичных преимуществ */
@@ -600,6 +638,7 @@ a {
 .interest-wrapper {
   padding-top: 52px;
   padding-bottom: 46px;
+
   text-align: center;
 }
 
@@ -623,15 +662,17 @@ a {
   padding-right: 370px;
 
   line-height: 24px;
+
   color: #333333;
 }
 
 /* стилизация модального окна */
 
 .modal {
+  position: relative;
+
   width: 568px;
   margin: 0 auto;
-  position: relative;
 }
 
 /* стилизация кнопки показа модального окна */
@@ -647,6 +688,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+
   border: none;
 }
 
@@ -658,7 +700,8 @@ a {
 
 /* стилизация поведения коричневой кнопки при наведении и фокусе */
 
-.button-brown:hover, .button-brown:focus {
+.button-brown:hover,
+.button-brown:focus {
   background-color: #604e43;
 }
 
@@ -666,6 +709,7 @@ a {
 
 .button-brown:active {
   color: #928a85;
+
   background-color: #503e33;
 }
 
@@ -677,16 +721,19 @@ a {
   padding-right: 50px;
   padding-top: 31px;
   padding-bottom: 29px;
+
   text-align: center;
 }
 
 /* стилизация формы на главной странице */
 
 .book-form {
-  background-color: #ffffff;
   position: absolute;
+
   padding: 55px;
-  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* стилизация лейблов полей ввода */
@@ -697,7 +744,8 @@ a {
 
 /* стилизация ввода для текстовых полей дат */
 
-.book-arrival-pos, .book-departure-pos {
+.book-arrival-pos,
+.book-departure-pos {
   padding-left: 10px;
 }
 
@@ -706,11 +754,13 @@ a {
 .book-date {
   width: 331px;
   height: 32px;
-  outline: none;
+
   line-height: 26px;
   font-weight: bold;
+
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
+  outline: none;
 }
 
 /* стилизация поведения при наведении на бокс ввода */
@@ -737,16 +787,18 @@ a {
 /* позиционирование иконки календарика */
 
 .calendar-button {
-  border: none;
-  background-color: transparent;
   position: absolute;
   right: 2px;
   top: 7px;
+
+  border: none;
+  background-color: transparent;
 }
 
 /* стилизация поведения иконки календарика при наведении */
 
-.calendar-button:hover .calendar, .calendar-button:focus .calendar {
+.calendar-button:hover .calendar,
+.calendar-button:focus .calendar {
   fill: #000000;
 }
 
@@ -772,18 +824,21 @@ a {
 
 .container-children {
   width: 32px;
-  text-align: center;
   padding-left: 1px;
+
+  text-align: center;
 }
 
 /* стилизация кнопки для декоративного элемента "минус" */
 
 .minus {
   position: relative;
+
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
+
   border: none;
   background-color: #f2f2f2;
 }
@@ -792,19 +847,23 @@ a {
 
 .minus::before {
   position: absolute;
-  content: "";
   top: 50%;
   left: 50%;
+
   width: 11px;
   height: 3px;
-  background-color: #a9a9a9;
   margin-top: -2px;
   margin-left: -5px;
+
+  background-color: #a9a9a9;
+
+  content: "";
 }
 
 /* стилизация поведения при наведении и фокусе на декоративный элемент "минус" */
 
-.minus:hover::before, .minus:focus::before {
+.minus:hover::before,
+.minus:focus::before {
   background-color: #000000;
 }
 
@@ -818,10 +877,12 @@ a {
 
 .plus {
   position: relative;
+
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
+
   border: none;
   background-color: #f2f2f2;
 }
@@ -830,39 +891,49 @@ a {
 
 .plus::before {
   position: absolute;
-  content: "";
   top: 50%;
   left: 50%;
+
   width: 11px;
   height: 3px;
-  background-color: #a9a9a9;
   margin-top: -2px;
   margin-left: -5px;
+
+  background-color: #a9a9a9;
+
+  content: "";
 }
 
 /* дополнительная стилизация декоративного элемента "плюс" */
 
 .plus::after {
   position: absolute;
-  content: "";
   top: 50%;
   left: 50%;
+
   width: 3px;
   height: 11px;
-  background-color: #a9a9a9;
   margin-top: -6px;
   margin-left: -1px;
+
+  background-color: #a9a9a9;
+
+  content: "";
 }
 
 /* стилизация поведения при наведении и фокусе на "плюс" и "минус" */
 
-.plus:hover::before, .plus:hover::after, .plus:focus::before, .plus:focus::after {
+.plus:hover::before,
+.plus:hover::after,
+.plus:focus::before,
+.plus:focus::after {
   background-color: #000000;
 }
 
 /* стилизация поведения при нажатии на "плюс" и "минус" */
 
-.plus:active::before, .plus:active::after {
+.plus:active::before,
+.plus:active::after {
   background-color: #81b3d2;
 }
 
@@ -874,6 +945,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 14px;
+
   text-align: center;
 }
 
@@ -881,6 +953,7 @@ a {
 
 .paragraph-book {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -897,7 +970,8 @@ a {
 
 /* микросетка оберток для взрослых и детей */
 
-.adult-wrapper, .children-wrapper {
+.adult-wrapper,
+.children-wrapper {
   display: flex;
   align-items: center;
 }
@@ -918,6 +992,7 @@ a {
 
 .map {
   z-index: -1;
+
   display: block;
 }
 
@@ -931,6 +1006,7 @@ a {
   padding-bottom: 28px;
   padding-top: 28px;
   display: flex;
+
   background: url(../img/background-inner.jpg) no-repeat;
   background-position-y: -50px;
 }
@@ -950,34 +1026,38 @@ a {
 /* общая стилизация блоков чекбоксов */
 
 .content-filter fieldset {
-  border: none;
   padding: 0;
   margin: 0;
+
+  border: none;
 }
 
 /* стилизация заголовка блока чекбоксов */
 
 .filter-header {
+  margin-bottom: 22px;
+
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 22px;
 }
 
 /* стилизация элементов списка чекбоксов */
 
 .options-list li {
   position: relative;
+
   margin-bottom: 20px;
 }
 
 /* стилизация лейблов чекбоксов */
 
 .options-list label {
+  margin-left: 40px;
+
   color: #ffffff;
   line-height: 21px;
-  margin-left: 40px;
 }
 
 /* стилизация чекбоксов checked */
@@ -989,14 +1069,17 @@ a {
 /* стилизация чекбоксов */
 
 .option + label::before {
-  content: "";
-  height: 24px;
   position: absolute;
   top: 1px;
   left: -1px;
+
   width: 26px;
+  height: 24px;
+
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+
+  content: "";
 }
 
 /* стилизация чекбоксов disabled */
@@ -1008,15 +1091,7 @@ a {
 /* стилизацция чекбоксов disabled checked */
 
 .option:disabled:checked + label::before {
-  content: "";
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  top: -6px;
-  left: -40px;
-  width: 27px;
   background-image: url(../img/checkbox-disabled-on.svg);
-  background-repeat: no-repeat;
 }
 
 /* стилизация отступа последнего элемента списка чекбоксов */
@@ -1028,7 +1103,7 @@ a {
 /* стилизация фокуса лейблов чекбоксов */
 
 .option:focus + label {
-  outline: rgb(125, 173, 217) auto 5px
+  outline: rgb(125, 173, 217) auto 5px;
 }
 
 /* стилизация фильтра */
@@ -1036,11 +1111,13 @@ a {
 .filter-range {
   margin-left: auto;
   width: 318px;
+
   color: #ffffff;
 }
 
 .filter-range-title {
   margin-bottom: 10px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1048,60 +1125,75 @@ a {
 
 .price-controls {
   position: relative;
+
   height: 32px;
   margin-bottom: 20px;
+
   font-size: 0;
+
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
+
   width: 2px;
   height: 22px;
+
   background: #ffffff;
+
   transform: translate(-50%, -50%);
+
+  content: "";
 }
 
-.price-controls .min-price, .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
   width: 81px;
   padding-left: 65px;
 }
 
 .price-controls label {
   display: inline-block;
+
   font-size: 14px;
   line-height: 34px;
   vertical-align: top;
+
   cursor: pointer;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
+
   color: inherit;
   font: inherit;
+  line-height: 21px;
+
   background: none;
   border: none;
-  line-height: 21px;
 }
 
 .range-controls {
   position: relative;
+
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
+
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
+
   background: #ffffff;
 }
 
@@ -1117,11 +1209,14 @@ a {
   position: absolute;
   top: -9px;
   width: 4px;
+
   height: 4px;
+
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
   cursor: pointer;
 }
 
@@ -1132,12 +1227,15 @@ a {
 .range-toggle {
   position: absolute;
   top: -9px;
+
   width: 4px;
   height: 4px;
+
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
   cursor: pointer;
 }
 
@@ -1152,20 +1250,25 @@ a {
   padding-bottom: 5px;
   padding-left: 34px;
   padding-right: 33px;
+
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
+
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+
   cursor: pointer;
 }
 
 /* стилизация поведения кнопки фильтра при наведении и фокусе */
 
-.btn-transparent:hover, .btn-transparent:focus {
+.btn-transparent:hover,
+.btn-transparent:focus {
   color: #000000;
+
   background: #ffffff;
 }
 
@@ -1182,19 +1285,21 @@ a {
 /* стилизация блока количества найденных опций "Найдено:"  */
 
 .search-found {
-  font-weight: bold;
-  font-size: 21px;
   width: 135px;
   margin-right: 29px;
+
+  font-weight: bold;
+  font-size: 21px;
 }
 
 /* стилизация блока "Сортировка"  */
 
 .search-sort {
+  margin-right: 39px;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
-  margin-right: 39px;
 }
 
 /* стилизация сетки блока типа сортировки */
@@ -1224,12 +1329,14 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: #b2b2b2;
+
   border-bottom: dotted 2px #81b3d2;
 }
 
 /* стилизация поведения при наведении и фокусе на тип сортировки  */
 
-.sort-type a:hover, .sort-type a:focus {
+.sort-type a:hover,
+.sort-type a:focus {
   color: #81b3d2;
 }
 
@@ -1237,6 +1344,7 @@ a {
 
 .sort-type a:active {
   color: #000000;
+
   border: none;
 }
 
@@ -1244,6 +1352,7 @@ a {
 
 .sort-selected a {
   color: #81b3d2;
+
   border: none;
 }
 
@@ -1270,7 +1379,8 @@ a {
 
 /* стилизация поведения при наведении и фокусе на тип порядка сортировки */
 
-.order-button:hover path, .order-button:focus path {
+.order-button:hover path,
+.order-button:focus path {
   fill: #231f20;
 }
 
@@ -1319,6 +1429,7 @@ a {
 
 .item-image {
   display: block;
+
   line-height: 0;
 }
 
@@ -1335,6 +1446,7 @@ a {
 
 .item-info-wrapper h3 {
   margin: 0;
+
   line-height: 26px;
 }
 
@@ -1343,13 +1455,15 @@ a {
 .item-name {
   display: inline-block;
   vertical-align: top;
+
   line-height: 18px;
   font-size: 21px;
 }
 
 /* стилизация поведения при наведении и фокусе на название элемента  */
 
-.item-name:hover, .item-name:focus {
+.item-name:hover,
+.item-name:focus {
   color: #81b3d2;
 }
 
@@ -1362,8 +1476,9 @@ a {
 /* стилизация контейнера блоков с типом и стоимостью элемента */
 
 .item-info-container {
-  font-size: 0;
   margin-bottom: 11px;
+
+  font-size: 0;
 }
 
 /* стилизация типа элемента и стоимости элемента */
@@ -1372,9 +1487,10 @@ a {
   display: inline-block;
   width: 110px;
   margin-right: 6px;
+  vertical-align: middle;
+
   font-size: 14px;
   line-height: 26px;
-  vertical-align: middle;
   color: #333333;
 }
 
@@ -1387,25 +1503,27 @@ a {
 /* стилизация синих кнопок карточек элементов */
 
 .button-catalog.button-blue {
-  /*width: 110px;*/
-  text-align: center;
   margin-right: 6px;
+
+  text-align: center;
 }
 
 /* общая стилизация кнопок карточек элементов */
 
 .button-catalog {
-  line-height: 11px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 17px;
+
+  line-height: 11px;
 }
 
 /* стилизация коричневых кнопок карточек элементов */
 
 .button-catalog.button-brown {
   width: 142px;
+
   text-align: center;
 }
 
@@ -1419,10 +1537,11 @@ a {
 /* стилизация блока звездочек рейтинга элемента  */
 
 .star-rating {
-  text-align: right;
   margin-bottom: 46px;
   display: block;
   height: 17px;
+
+  text-align: right;
 }
 
 /* стилизация блока "Рейтинг" */
@@ -1433,8 +1552,10 @@ a {
   padding-right: 1px;
   padding-top: 3px;
   padding-bottom: 3px;
+
   text-align: center;
   line-height: 21px;
   color: #666666;
+
   background-color: #f2f2f2;
 }
