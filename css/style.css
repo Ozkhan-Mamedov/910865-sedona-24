@@ -94,10 +94,10 @@ a {
 
   display: flex;
   flex-wrap: wrap;
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* стилизация элементов списка слева от логотипа */
@@ -142,8 +142,8 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  padding-bottom: 30px;
-  padding-top: 36px;
+  padding-bottom: 33px;
+  padding-top: 33px;
 }
 
 /* дополнительная стилизация футера на главной */
@@ -312,14 +312,14 @@ a {
               url("../img/polygon.svg") no-repeat,
               url("../img/background.jpg") no-repeat;
   background-size: 459px 353px, contain, cover;
-  background-position: center 75px, center calc(100% + 1px), center -56px;
+  background-position: center+76px, center 452px, center -56px;
 }
 
 /* стилизация обертки "Седона - небольшой..." */
 
 .lead-wrapper {
-  padding-top: 65px;
-  padding-bottom: 57px;
+  padding-top: 61px;
+  padding-bottom: 50px;
 
   text-align: center;
 }
@@ -327,9 +327,9 @@ a {
 /* стилизация блока "Седона - небольшой..." */
 
 .container-lead {
-  margin-bottom: 30px;
-  padding-left: 381px;
-  padding-right: 381px;
+  margin-bottom: 27px;
+  padding-left: 312px;
+  padding-right: 312px;
 
   font-size: 21px;
   font-weight: bold;
@@ -340,8 +340,8 @@ a {
 .container-advantages {
   color: #333333;
 
-  padding-left: 356px;
-  padding-right: 356px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /* сетка списка преимуществ */
@@ -362,25 +362,17 @@ a {
 .main-advantages-wrapper {
   color: #ffffff;
   background-color: #81b3d2;
-  position: relative;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 56px;
+  padding-top: 48px;
 }
 
-/* дополнительная стилизация обертки первого главного преимущства */
+/* стилизация заголовков двух главных преимуществ */
 
-.advantages-wrapper-1 {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 45px;
-  padding-top: 42px;
-}
-
-/* дополнительная стилизация обертки второго главного преимущества */
-
-.advantages-wrapper-2 {
-  padding-left: 48px;
-  padding-right: 49px;
-  padding-bottom: 45px;
-  padding-top: 42px;
+.main-advantages-wrapper h3 {
+  padding-left: 51px;
+  padding-right: 51px;
 }
 
 /* стилизация заголовков преимуществ */
@@ -390,29 +382,18 @@ a {
   line-height: 21px;
 
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
   text-align: center;
-}
-
-/* дополнительная стилизация заголовка первого главного преимущества */
-
-.main-advantage-1 {
-  padding-left: 79px;
-  padding-right: 79px;
-}
-
-/* дополнительная стилизация заголовка второго главного преимущества */
-
-.main-advantage-2 {
-  padding-left: 77px;
-  padding-right: 76px;
 }
 
 /* стилизация номеров преимуществ */
 
 .advantages-list span {
+  position: relative;
   line-height: 21px;
-  margin-bottom: 32px;
+  margin-bottom: 21px;
+  padding-left: 52px;
+  padding-right: 52px;
 
   display: block;
   text-align: center;
@@ -426,8 +407,8 @@ a {
   width: 9px;
   height: 2px;
   background-color: #c2d9e8;
-  top: 125px;
-  left: 172px;
+  top: 10px;
+  left: 126px;
 }
 
 /* стилизация декоративного элемента идущего после номера главного преимущества */
@@ -438,8 +419,8 @@ a {
   width: 9px;
   height: 2px;
   background-color: #c2d9e8;
-  top: 125px;
-  left: 218px;
+  top: 10px;
+  left: 171px;
 }
 
 /* стилизация информации преимущств */
@@ -467,10 +448,19 @@ a {
   display: flex;
 }
 
-/* относительное позиционирование для декоративных изображений */
+/* общая стилизация элементов подсписка */
 
 .sub-main-advantages li {
   position: relative;
+  padding-bottom: 82px;
+  padding-top: 162px;
+}
+
+/* стилизация заголовков подсписка */
+
+.sub-main-advantages h3 {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* декоративное изображение жилья */
@@ -482,7 +472,7 @@ a {
   position: absolute;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  top: 54px;
+  top: 60px;
   left: 162px;
 }
 
@@ -491,8 +481,6 @@ a {
 .first-point {
   padding-left: 73px;
   padding-right: 73px;
-  padding-bottom: 88px;
-  padding-top: 164px;
 }
 
 /* декоративное изображение еды */
@@ -513,8 +501,6 @@ a {
 .second-point {
   padding-left: 58px;
   padding-right: 58px;
-  padding-bottom: 88px;
-  padding-top: 164px;
 }
 
 /* декоративное изображение сувениров */
@@ -535,8 +521,6 @@ a {
 .third-point {
   padding-left: 63px;
   padding-right: 63px;
-  padding-bottom: 88px;
-  padding-top: 164px;
 }
 
 /* стилизация блока информации подсписка первого элемента */
@@ -561,7 +545,11 @@ a {
 
 .secondary-advantages {
   background-color: #eeeeee;
-  position: relative;
+  padding-bottom: 59px;
+  padding-top: 48px;
+  padding-left: 60px;
+  width: 280px;
+  padding-right: 60px;
 }
 
 /* стилизация цвета информации о преимуществах */
@@ -584,8 +572,8 @@ a {
   width: 9px;
   height: 2px;
   background-color: #979797;
-  top: 133px;
-  left: 172px;
+  top: 10px;
+  left: 115px;
 }
 
 /* стилизация декоративного элемента идущего после номера вторичного преимущества */
@@ -596,66 +584,22 @@ a {
   width: 9px;
   height: 2px;
   background-color: #979797;
-  top: 133px;
-  left: 217px;
+  top: 10px;
+  left: 155px;
 }
 
-/* стилизация первого вторичного преимущства */
+/* стилизация отступов заголовков вторичных преимуществ */
 
-.sub-first-point {
-  padding-bottom: 65px;
-  padding-top: 50px;
-  padding-left: 95px;
-  width: 208px;
-  padding-right: 97px;
-}
-
-/* стилизация второго вторичного преимущства */
-
-.sub-second-point {
-  width: 262px;
-  padding-top: 50px;
-  padding-left: 69px;
-  padding-right: 69px;
-  padding-bottom: 65px;
-}
-
-/* стилизация третьего вторичного преимущества */
-
-.sub-third-point {
-  width: 260px;
-  padding-top: 50px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 65px;
-}
-
-/* стилизация отступов заголовка вторичных преимуществ 1 элемента */
-
-.sub-first-point h3 {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-/* стилизация отступов заголовка вторичных преимуществ 2 элемента */
-
-.sub-second-point h3 {
-  padding-left: 82px;
-  padding-right: 82px;
-}
-
-/* стилизация отступов заголовка вторичных преимуществ 3 элемента */
-
-.sub-third-point h3 {
-  padding-left: 73px;
-  padding-right: 73px;
+.secondary-advantages h3 {
+  padding-left: 61px;
+  padding-right: 61px;
 }
 
 /* стилизация обертки блока "Заинтересовались?..." */
 
 .interest-wrapper {
-  padding-top: 58px;
-  padding-bottom: 54px;
+  padding-top: 52px;
+  padding-bottom: 46px;
   text-align: center;
 }
 
@@ -663,9 +607,9 @@ a {
 
 .interest {
   margin: 0;
-  margin-bottom: 38px;
-  padding-left: 452px;
-  padding-right: 452px;
+  margin-bottom: 23px;
+  padding-left: 300px;
+  padding-right: 300px;
 
   font-weight: bold;
   font-size: 30px;
@@ -731,8 +675,8 @@ a {
   width: 568px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 31px;
+  padding-bottom: 29px;
   text-align: center;
 }
 
@@ -929,7 +873,7 @@ a {
   padding-top: 17px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
   text-align: center;
 }
 
