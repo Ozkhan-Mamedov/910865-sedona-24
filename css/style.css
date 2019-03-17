@@ -103,7 +103,7 @@ a {
 /* стилизация элементов списка слева от логотипа */
 
 .site-navigation-item-left {
-  width: 25%;
+  width: 23%;
 
   text-align: left;
 }
@@ -111,9 +111,15 @@ a {
 /* стилизация элементов списка справа от логотипа */
 
 .site-navigation-item-right {
-  width: 25%;
+  width: 23%;
 
   text-align: right;
+}
+
+/* */
+
+.site-navigation li:nth-child(4n+3) {
+  margin-left: 83px;
 }
 
 /* поведение элементов списка навигации при наведении и фокусе */
@@ -145,8 +151,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 33px;
-  padding-top: 33px;
+  padding-bottom: 36px;
+  padding-top: 37px;
 }
 
 /* дополнительная стилизация футера на главной */
@@ -184,6 +190,8 @@ a {
   justify-content: center;
 
   width: 400px;
+  margin-bottom: -6px;
+  margin-right: -6px;
 
   line-height: 0;
 }
@@ -747,16 +755,18 @@ a {
 .book-arrival-pos,
 .book-departure-pos {
   padding-left: 10px;
+  padding-right: 36px;
 }
 
 /* стилизация боксов ввода */
 
 .book-date {
-  width: 331px;
+  width: 295px;
   height: 32px;
 
   line-height: 26px;
   font-weight: bold;
+  text-transform: uppercase;
 
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -1538,10 +1548,16 @@ a {
 
 .star-rating {
   margin-bottom: 46px;
-  display: block;
   height: 17px;
 
+  font-size: 0;
   text-align: right;
+}
+
+/* стилизация последнего элемента в списке рейтинга */
+
+.star-rating img:not(:last-child) {
+  margin-right: 6px;
 }
 
 /* стилизация блока "Рейтинг" */
