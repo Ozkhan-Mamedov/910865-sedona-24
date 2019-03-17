@@ -928,8 +928,8 @@ a {
 .content-filter {
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 33px;
-  padding-top: 31px;
+  padding-bottom: 28px;
+  padding-top: 28px;
   display: flex;
   background: url(../img/background-inner.jpg) no-repeat;
   background-position-y: -50px;
@@ -944,7 +944,7 @@ a {
 /* стилизация внешнего отступа первого блока чекбоксов */
 
 .content-filter fieldset:first-child {
-  margin-right: 115px;
+  margin-right: 119px;
 }
 
 /* общая стилизация блоков чекбоксов */
@@ -962,20 +962,14 @@ a {
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 29px;
-}
-
-/* стилизация списка чекбоксов */
-
-.options-list {
-  /*padding-left: 39px;*/
+  margin-bottom: 22px;
 }
 
 /* стилизация элементов списка чекбоксов */
 
 .options-list li {
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 /* стилизация лейблов чекбоксов */
@@ -983,21 +977,13 @@ a {
 .options-list label {
   color: #ffffff;
   line-height: 21px;
-  /*padding-left: 39px;*/
-  margin-left: 39px;
+  margin-left: 40px;
 }
 
 /* стилизация чекбоксов checked */
 
 .option:checked + label::before {
-  /*content: "";
-  height: 23px;
-  position: absolute;
-  top: 0px;
-  left: -40px;
-  width: 27px;*/
   background-image: url(../img/checkbox-on.svg);
-  /*background-repeat: no-repeat;*/
 }
 
 /* стилизация чекбоксов */
@@ -1006,8 +992,8 @@ a {
   content: "";
   height: 24px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 1px;
+  left: -1px;
   width: 26px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
@@ -1016,15 +1002,7 @@ a {
 /* стилизация чекбоксов disabled */
 
 .option:disabled + label::before {
-  /*content: "";
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  top: -6px;
-  left: -40px;
-  width: 27px;*/
   background-image: url(../img/checkbox-disabled-off.svg);
-  /*background-repeat: no-repeat;*/
 }
 
 /* стилизацция чекбоксов disabled checked */
@@ -1057,20 +1035,20 @@ a {
 
 .filter-range {
   margin-left: auto;
-  width: 330px;
+  width: 318px;
   color: #ffffff;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -1089,14 +1067,14 @@ a {
 }
 
 .price-controls .min-price, .price-controls .max-price {
-  width: 90px;
+  width: 81px;
   padding-left: 65px;
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 34px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -1167,10 +1145,15 @@ a {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0;
+  margin-left: 85px;
+  margin-right: 85px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 34px;
+  padding-right: 33px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1190,10 +1173,9 @@ a {
 
 .search-result {
   display: flex;
-  /*align-items: center;*/
   padding-left: 72px;
-  padding-top: 35px;
-  padding-bottom: 36px;
+  padding-top: 32px;
+  padding-bottom: 28px;
   padding-right: 73px;
 }
 
@@ -1203,8 +1185,7 @@ a {
   font-weight: bold;
   font-size: 21px;
   width: 135px;
-  margin-right: 30px;
-  /*margin-right: 49px;*/
+  margin-right: 29px;
 }
 
 /* стилизация блока "Сортировка"  */
@@ -1213,7 +1194,7 @@ a {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
-  margin-right: 40px;
+  margin-right: 39px;
 }
 
 /* стилизация сетки блока типа сортировки */
@@ -1346,7 +1327,6 @@ a {
 .item-info-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 90px;
   width: 258px;
 }
@@ -1355,12 +1335,14 @@ a {
 
 .item-info-wrapper h3 {
   margin: 0;
+  line-height: 26px;
 }
 
 /* стилизация названия элемента */
 
 .item-name {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   line-height: 18px;
   font-size: 21px;
 }
@@ -1381,6 +1363,7 @@ a {
 
 .item-info-container {
   font-size: 0;
+  margin-bottom: 11px;
 }
 
 /* стилизация типа элемента и стоимости элемента */
@@ -1388,9 +1371,9 @@ a {
 .item-info {
   display: inline-block;
   width: 110px;
-  margin-right: 4px;
+  margin-right: 6px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   vertical-align: middle;
   color: #333333;
 }
@@ -1404,7 +1387,7 @@ a {
 /* стилизация синих кнопок карточек элементов */
 
 .button-catalog.button-blue {
-  width: 110px;
+  /*width: 110px;*/
   text-align: center;
   margin-right: 6px;
 }
@@ -1412,7 +1395,11 @@ a {
 /* общая стилизация кнопок карточек элементов */
 
 .button-catalog {
-  line-height: 21px;
+  line-height: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 17px;
 }
 
 /* стилизация коричневых кнопок карточек элементов */
@@ -1433,7 +1420,7 @@ a {
 
 .star-rating {
   text-align: right;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   display: block;
   height: 17px;
 }
@@ -1442,6 +1429,10 @@ a {
 
 .item-rating {
   display: block;
+  padding-left: 3px;
+  padding-right: 1px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   text-align: center;
   line-height: 21px;
   color: #666666;
