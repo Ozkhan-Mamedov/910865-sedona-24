@@ -917,6 +917,7 @@ a {
 .book-date {
   width: 295px;
   height: 32px;
+  margin-left: auto;
 
   line-height: 26px;
   font-weight: bold;
