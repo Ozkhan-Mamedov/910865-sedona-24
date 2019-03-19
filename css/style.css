@@ -693,8 +693,15 @@ a {
 /* стилизация обертки блока "Заинтересовались?..." */
 
 .interest-wrapper {
-  padding-top: 52px;
-  padding-bottom: 46px;
+  /*padding-top: 52px;
+  padding-bottom: 132px;*/
+
+  position: relative;
+  z-index: 2;
+
+  height: 291px;
+
+  background-color: #ffffff;
 
   text-align: center;
 }
@@ -702,6 +709,11 @@ a {
 /* стилизация блока "Заинтересовались?" */
 
 .interest {
+  position: absolute;
+  left: 150px;
+  top: 52px;
+  z-index: 100;
+
   margin: 0;
   margin-bottom: 23px;
   padding-left: 300px;
@@ -710,17 +722,24 @@ a {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+
+  background-color: #ffffff;
 }
 
 /* стилизация блока "Укажите предполагаемые..." */
 
 .interest-info {
+  position: absolute;
+  top: 111px;
+  left: 12px;
+
   padding-left: 370px;
   padding-right: 370px;
 
   line-height: 24px;
-
   color: #333333;
+
+  background-color: #ffffff;
 }
 
 /* стилизация модального окна */
@@ -773,6 +792,10 @@ a {
 /* стилизация коричневой кнопки модального окна */
 
 .button-modal.button-brown {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+
   width: 568px;
   padding-left: 50px;
   padding-right: 50px;
@@ -798,7 +821,7 @@ a {
 /* свойство, отвечающее за показ формы */
 
 .modal-show {
-  z-index: 1;
+  z-index: 0;
 
   opacity: 1;
 
@@ -810,13 +833,13 @@ a {
 /* свойство, отвечающее за исчезание формы */
 
 .modal-hide {
-  z-index: -1;
+  z-index: -2;
 
   -webkit-transition-duration: 1s;
 
        -o-transition-duration: 1s;
 
-          transition-duration: 1s;
+          transition-duration: 2s;
   -webkit-transition-property: z-index;
   -o-transition-property: z-index;
   transition-property: z-index;
@@ -894,7 +917,7 @@ a {
 
     -webkit-transform: translateY(-86px);
 
-            transform: translateY(-86px);
+            transform: translateY(-100%);
   }
 }
 
