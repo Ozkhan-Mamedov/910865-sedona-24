@@ -1324,7 +1324,7 @@ a {
 /* стилизация фокуса лейблов чекбоксов */
 
 .option:focus + label {
-  outline: rgb(125, 173, 217) auto 5px;
+  outline: 2px solid rgb(125, 173, 217);
 }
 
 /* стилизация фильтра */
