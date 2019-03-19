@@ -692,9 +692,9 @@ a {
 
 /* стилизация обертки блока "Заинтересовались?..." */
 
-.interest-wrapper {
-  /*padding-top: 52px;
-  padding-bottom: 132px;*/
+/*.interest-wrapper {
+  padding-top: 52px;
+  padding-bottom: 132px;
 
   position: relative;
   z-index: 2;
@@ -704,16 +704,11 @@ a {
   background-color: #ffffff;
 
   text-align: center;
-}
+}*/
 
 /* стилизация блока "Заинтересовались?" */
 
 .interest {
-  position: absolute;
-  left: 150px;
-  top: 52px;
-  z-index: 100;
-
   margin: 0;
   margin-bottom: 23px;
   padding-left: 300px;
@@ -729,12 +724,9 @@ a {
 /* стилизация блока "Укажите предполагаемые..." */
 
 .interest-info {
-  position: absolute;
-  top: 111px;
-  left: 12px;
-
   padding-left: 370px;
   padding-right: 370px;
+  margin-bottom: 46px;
 
   line-height: 24px;
   color: #333333;
@@ -746,9 +738,24 @@ a {
 
 .modal {
   position: relative;
+  z-index: 2;
 
-  width: 568px;
+  padding-top: 52px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  /*width: 568px;*/
+  /*margin: 0 auto;*/
+}
+
+/* стилизация блока формы и кнопки */
+
+.btn-form-wrapper {
+  position: relative;
+
   margin: 0 auto;
+  width: 568px;
 }
 
 /* стилизация кнопки показа модального окна */
@@ -792,17 +799,13 @@ a {
 /* стилизация коричневой кнопки модального окна */
 
 .button-modal.button-brown {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-
   width: 568px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 31px;
   padding-bottom: 29px;
 
-  text-align: center;
+  /*text-align: center;*/
 }
 
 /* стилизация формы на главной странице */
@@ -810,6 +813,12 @@ a {
 .book-form {
   position: absolute;
 
+  overflow: hidden;
+}
+
+/* стилизация контента формы */
+
+.form-content {
   padding: 55px;
 
   opacity: 0;
@@ -821,8 +830,6 @@ a {
 /* свойство, отвечающее за показ формы */
 
 .modal-show {
-  z-index: 0;
-
   opacity: 1;
 
   -webkit-animation: falling-out 0.8s;
@@ -833,17 +840,6 @@ a {
 /* свойство, отвечающее за исчезание формы */
 
 .modal-hide {
-  z-index: -2;
-
-  -webkit-transition-duration: 1s;
-
-       -o-transition-duration: 1s;
-
-          transition-duration: 2s;
-  -webkit-transition-property: z-index;
-  -o-transition-property: z-index;
-  transition-property: z-index;
-
   -webkit-animation: fall-back 0.8s;
 
           animation: fall-back 0.8s;
@@ -853,8 +849,8 @@ a {
 
 @-webkit-keyframes falling-out {
   0% {
-    -webkit-transform: translateY(-86px);
-            transform: translateY(-86px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   100% {
@@ -867,12 +863,8 @@ a {
   0% {
     opacity: 0;
 
-    -webkit-transform: translateY(-86px);
-            transform: translateY(-86px);
-  }
-
-  50% {
-    opacity: 0.5;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   100% {
@@ -890,16 +882,12 @@ a {
     opacity: 1;
   }
 
-  50% {
-    opacity: 0.5;
-  }
-
   100% {
     opacity: 0;
 
-    -webkit-transform: translateY(-86px);
+    -webkit-transform: translateY(-100%);
 
-            transform: translateY(-86px);
+            transform: translateY(-100%);
   }
 }
 
@@ -908,14 +896,10 @@ a {
     opacity: 1;
   }
 
-  50% {
-    opacity: 0.5;
-  }
-
   100% {
     opacity: 0;
 
-    -webkit-transform: translateY(-86px);
+    -webkit-transform: translateY(-100%);
 
             transform: translateY(-100%);
   }
