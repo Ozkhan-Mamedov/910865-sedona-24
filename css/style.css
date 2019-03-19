@@ -690,22 +690,6 @@ a {
   padding-right: 61px;
 }
 
-/* стилизация обертки блока "Заинтересовались?..." */
-
-/*.interest-wrapper {
-  padding-top: 52px;
-  padding-bottom: 132px;
-
-  position: relative;
-  z-index: 2;
-
-  height: 291px;
-
-  background-color: #ffffff;
-
-  text-align: center;
-}*/
-
 /* стилизация блока "Заинтересовались?" */
 
 .interest {
@@ -745,8 +729,6 @@ a {
   text-align: center;
 
   background-color: #ffffff;
-  /*width: 568px;*/
-  /*margin: 0 auto;*/
 }
 
 /* стилизация блока формы и кнопки */
