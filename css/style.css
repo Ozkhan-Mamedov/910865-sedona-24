@@ -51,7 +51,8 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -85,7 +86,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -238,7 +240,8 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -269,7 +272,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -700,6 +704,7 @@ a {
 
   height: 508px;
 
+  background-color: #9ac1da;
   background: url("../img/welcome.svg") no-repeat,
               url("../img/background.jpg") no-repeat;
   background-size: 459px 353px, cover;
@@ -854,6 +859,8 @@ a {
 
 .main-advantages-image {
   line-height: 0;
+
+  background-color: #81b3d2;
 }
 
 /* поворот главной оси для второго главного преимущества */
@@ -871,6 +878,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* общая стилизация элементов подсписка */
@@ -1529,6 +1538,8 @@ a {
   z-index: -1;
 
   display: block;
+
+  border: none;
 }
 
 /* стилизация основного блока внутренней страницы */
@@ -1544,6 +1555,7 @@ a {
   display: -ms-flexbox;
   display: flex;
 
+  background-color: #7da4c5;
   background: url(../img/background-inner.jpg) no-repeat;
   background-position-y: -50px;
 }
@@ -1742,16 +1754,18 @@ a {
   left: 0;
 }
 
-.range-toggle:hover {
+.range-toggle:hover,
+.range-toggle:focus {
   background: #1c4f80;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
 
+  width: 4px;
   height: 4px;
+  padding: 2px;
 
   background: #ababab;
   border: 8px solid #ffffff;
@@ -1764,22 +1778,6 @@ a {
 
 .range-toggle-max {
   left: 80%;
-}
-
-.range-toggle {
-  position: absolute;
-  top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-
-  cursor: pointer;
 }
 
 /* стилизация кнопки фильтра */
@@ -1969,25 +1967,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 30px;
   padding-left: 72px;
   padding-bottom: 30px;
   padding-right: 73px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* стилизация обертки картинки элемента */
-
-.catalog-item-image {
-  margin-right: 30px;
 }
 
 /* стилизация блока картинки элемента */
 
 .item-image {
   display: block;
+  margin-right: 30px;
 
   line-height: 0;
 }
@@ -2002,8 +1995,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90px;
-  width: 258px;
 }
 
 /* стилизация заголовка блока информации об элементе */
@@ -2012,6 +2003,7 @@ a {
   margin: 0;
 
   line-height: 26px;
+  letter-spacing: 0.014em;
 }
 
 /* стилизация названия элемента */
@@ -2019,6 +2011,7 @@ a {
 .item-name {
   display: inline-block;
   vertical-align: top;
+  max-width: 754px;
 
   line-height: 18px;
   font-size: 21px;
@@ -2088,8 +2081,6 @@ a {
 /* стилизация коричневых кнопок карточек элементов */
 
 .button-catalog.button-brown {
-  width: 142px;
-
   text-align: center;
 }
 

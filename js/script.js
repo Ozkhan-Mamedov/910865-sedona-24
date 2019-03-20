@@ -4,6 +4,12 @@ var popup = document.querySelector(".form-content");
 
 var focus = popup.querySelector("[name=arrival-date]");
 
+function defstate() {
+  popup.classList.remove("modal-show");
+}
+
+window.addEventListener("load", defstate);
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (popup.classList.contains("modal-show")) {
