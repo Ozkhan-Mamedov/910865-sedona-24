@@ -1145,8 +1145,6 @@ a {
   padding-right: 50px;
   padding-top: 31px;
   padding-bottom: 29px;
-
-  /*text-align: center;*/
 }
 
 /* стилизация формы на главной странице */
@@ -1540,6 +1538,13 @@ a {
   display: block;
 
   border: none;
+}
+
+/* стилизация блока-обертки карты */
+
+.map-wrapper {
+  background: url("../img/map.jpg") no-repeat;
+  height: 593px;
 }
 
 /* стилизация основного блока внутренней страницы */
